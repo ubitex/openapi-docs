@@ -23,3 +23,4 @@
     * [批量查询](/spot-openapiorder/batch-order_get.md)
     * [查询当前挂单](/spot-openapi/order/open-order_get.md)
     * [撤销当前挂单](/spot-openapi/order/open-order_delete.md)
+    * [历史订单查询](/spot-openapi/order/history-order.md)
