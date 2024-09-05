@@ -1,9 +1,8 @@
-`GET` /public/time
+`GET` /v1/spot/public/time
 
 ## 请求参数
 
 无
-
 
 
 ### 请求示例

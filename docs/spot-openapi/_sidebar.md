@@ -12,4 +12,7 @@
     * [查询近期成交列表](/spot-openapi/market/public_trade_recent)
     * [查询历史成交列表](/spot-openapi/market/public_trade_history)
     * [完整ticker](/spot-openapi/market/public_ticker)
+    * [获取最新价格ticker](/spot-openapi/public_ticker_price)
+    * [获取最优挂单ticker](/spot-openapi/public_ticker_book)
+    * [获取24h统计ticker](/spot-openapi/public_ticker_24h)
 
