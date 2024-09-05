@@ -1,5 +1,6 @@
-`GET` /v1/spot/public/symbol
+获取交易对信息
 
+`GET` /v1/spot/public/symbol
 
 
 ## 请求参数
@@ -12,19 +13,20 @@
 
 ### 请求示例
 
-/v1/spot/public/symbol?symbol=btc_usdt&symbols=&version&tags
-
+```shell
+curl --location --request GET 'https://api.ubit.site/v1/spot/public/symbol?symbol=btc_usdt&symbols=&version&tags' \
+--header 'validate-algorithms: HmacSHA256' \
+--header 'validate-appkey: 2fa91add-388c-44f2-8365-f4b72886c135' \
+--header 'validate-recvwindow: 6000' \
+--header 'validate-timestamp: 1725521245226' \
+--header 'validate-signature: 4d09d1d3f75b2a2db923104051c25848e4b161fa631f1baa78e5d81fa2b390f8' \
+--header 'Accept: */*' \
+--header 'Host: api.ubit.site' \
+--header 'Connection: keep-alive' 
+```
 
 
 ## 响应结果TODO
-
-| 名称       | 类型   | 说明       |
-| ---------- | ------ | ---------- |
-| serverTime | string | 服务器时间 |
-
-
-
-### 响应示例
 
 ```json
 {

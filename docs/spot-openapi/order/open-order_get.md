@@ -1,4 +1,4 @@
-# 查询当前挂单
+查询当前挂单
 
 `GET` /v1/spot/open-order
 
@@ -26,8 +26,6 @@ curl --location --request GET 'https://api.ubit.site/v1/spot/open-order?symbol=b
 ```
 
 ## 响应结果
-
-### 响应示例
 
 ```json
 {

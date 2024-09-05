@@ -1,4 +1,4 @@
-# 单笔撤单
+单笔撤单
 
 `DELETE` /v1/spot/order/{orderId}
 
@@ -24,8 +24,6 @@ curl --location --request DELETE 'https://api.ubit.site/v1/spot/order/4016292677
 ```
 
 ## 响应结果
-
-### 响应示例
 
 ```json
 {

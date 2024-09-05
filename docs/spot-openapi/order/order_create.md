@@ -1,4 +1,4 @@
-# 单笔下单
+单笔下单
 
 `POST` /v1/spot/order
 
@@ -36,8 +36,6 @@ curl --location --request POST 'https://api.ubit.site/v1/spot/order' \
 
 
 ## 响应结果
-
-### 响应示例
 
 ```json
 {

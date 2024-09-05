@@ -1,4 +1,4 @@
-# 撤销当前挂单
+撤销当前挂单
 
 `DELETE` /v1/spot/open-order
 
@@ -29,8 +29,6 @@ curl --location --request DELETE 'https://api.ubit.site/v1/spot/open-order' \
 ```
 
 ## 响应结果
-
-### 响应示例
 
 ```json
 {

@@ -1,4 +1,4 @@
-# 单笔查询
+单笔查询
 
 `GET` /v1/spot/order
 
@@ -24,8 +24,6 @@ curl --location --request GET 'https://api.ubit.site/v1/spot/order?orderId=40187
 ```
 
 ## 响应结果
-
-### 响应示例
 
 ```json
 {

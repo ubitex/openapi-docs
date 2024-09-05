@@ -1,6 +1,6 @@
+获取k线数据
+
 `GET` /v1/spot/public/kline
-
-
 
 ## 请求参数
 

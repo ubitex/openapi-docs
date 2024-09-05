@@ -1,4 +1,4 @@
-# 批量撤单
+批量撤单
 
 `DELETE` /v1/spot/batch-order
 
@@ -27,8 +27,6 @@ curl --location --request DELETE 'https://api.ubit.site/v1/spot/batch-order' \
 ```
 
 ## 响应结果
-
-### 响应示例
 
 ```json
 {

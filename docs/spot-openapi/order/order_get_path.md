@@ -1,4 +1,4 @@
-# 单笔获取
+单笔获取
 
 `GET` /v1/spot/order/{orderId}
 
@@ -24,8 +24,6 @@ curl --location --request GET 'https://api.ubit.site/v1/spot/order/4018787108816
 ```
 
 ## 响应结果
-
-### 响应示例
 
 ```json
 {

@@ -1,4 +1,4 @@
-# 批量查询
+批量查询
 
 `GET` /v1/spot/batch-order
 
@@ -23,8 +23,6 @@ curl --location --request GET 'https://api.ubit.site/v1/spot/batch-order?orderId
 ```
 
 ## 响应结果
-
-### 响应示例
 
 ```json
 {
