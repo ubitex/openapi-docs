@@ -1,7 +1,5 @@
 <!-- docs/_sidebar.md -->
 
-
-
 * [接入说明](/spot-openapi/README)
 
 * 市场数据
@@ -16,3 +14,12 @@
     * [获取最优挂单ticker](/spot-openapi/market/public_ticker_book)
     * [获取24h统计ticker](/spot-openapi/market/public_ticker_24h)
 
+* 订单
+    * [单笔下单](/spot-openapi/order/order_create)
+    * [单笔撤单](/spot-openapi/order/order_delete)
+    * [单笔查询](/spot-openapi/order/order_get)
+    * [单笔获取](/spot-openapi/order/order_get_path)
+    * [批量撤单](/spot-openapi/order/batch-order_delete)
+    * [批量查询](/spot-openapiorder/batch-order_get.md)
+    * [查询当前挂单](/spot-openapi/order/open-order_get.md)
+    * [撤销当前挂单](/spot-openapi/order/open-order_delete.md)
