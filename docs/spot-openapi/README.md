@@ -1,6 +1,6 @@
 `域名`:  `http://api.ubit.site `   
 `现货统一前缀`: `/v1/spot`   
-`合约统一前缀`: `/v1/future-u`  
+`合约统一前缀`: `/v1/future-u`
 
 
 
@@ -38,39 +38,41 @@ apiKey限流示例说明：50/s/apiKey，表示每个apiKey每秒该接口请求
 
 
 
-1. 先通过用户中心申请appkey和secretkey，针对不同的调用，提供不同的appkey和secretkey。  
+1. 先通过用户中心申请appkey和secretkey，针对不同的调用，提供不同的appkey和secretkey。
 
-2. 加入timestamp(时间戳)，其值应当是请求发送时刻的unix时间戳(毫秒)，数据的有郊时间根据此值来计算。   
+2. 加入timestamp(时间戳)，其值应当是请求发送时刻的unix时间戳(毫秒)，数据的有郊时间根据此值来计算。
 
-3. 加入signature(数据签名)，所有数据的签名信息。  
+3. 加入signature(数据签名)，所有数据的签名信息。
 
 4. 加入recvwindow(自定义请求有效时间)，有效时间目前相对简单统一固定为某个值。
 
    >服务器收到请求时会判断请求中的时间戳，最长60秒，最小为2秒，如果是5000毫秒之前发出的，则请求会被认为无效。  
-   这个时间窗口值可以通过发送可选参数recvWindow来设置。  另外，如果服务器计算得出客户端时间戳在服务器时间的‘未来’一秒以上，也会拒绝请求。  关于交易时效性 互联网状况并不100%可靠，不可完全依赖,因此你的程序本地到UBIT服务器的时延会有抖动。这是我们设置recvwindow的目的所在，如果你从事高频交易，对交易时效性有较高的要求，可以灵活设置recvwindow以达到你的要求。 不推荐使用5秒以上的recvwindow  
+   这个时间窗口值可以通过发送可选参数recvWindow来设置。  另外，如果服务器计算得出客户端时间戳在服务器时间的‘未来’一秒以上，也会拒绝请求。  关于交易时效性 互联网状况并不100%可靠，不可完全依赖,因此你的程序本地到UBIT服务器的时延会有抖动。这是我们设置recvwindow的目的所在，如果你从事高频交易，对交易时效性有较高的要求，可以灵活设置recvwindow以达到你的要求。 不推荐使用5秒以上的recvwindow
 
-5. 加入algorithms (签名方法/算法)，用户计算签名是基于哈希的协议，推荐使用HmacSHA256。具体支持那些协议，请参见下面列出: 
+5. 加入algorithms (签名方法/算法)，用户计算签名是基于哈希的协议，推荐使用HmacSHA256。具体支持那些协议，请参见下面列出:
    `HmacMD5、HmacSHA1、HmacSHA224、HmacSHA256(推荐)、HmacSHA384、HmacSHA512`
 
-### 签名生成  
+### 签名生成
 
 以http://api.ubit.site/v1/spot 为例  
-以下是在linux bash环境下使用 echo openssl 和curl工具实现的一个调用接口下单的示例  
-appkey、secret仅供示范:  
-appKey: uasdfk-76d0-4f6e-a6b2-asdfdas    
-secretKey: bc6630d0231fda5cd98794f52c4998659beda290  
-Header部分数据：  
-validate-algorithms: HmacSHA256  
-validate-appkey: uasdfk-76d0-4f6e-a6b2-asdfdas  
-validate-recvwindow: 5000  
-validate-timestamp: 1717234493000  
-validate-signature: 1231312318f13dc27dbbd02c2cc51ff7059765ed12313131  
+以下是在linux bash环境下使用 echo openssl 和curl工具实现的一个调用接口下单的示例
 
-### 请求数据 
+appkey、secret仅供示范:
+- appKey: uasdfk-76d0-4f6e-a6b2-asdfdas
+- secretKey: bc6630d0231fda5cd98794f52c4998659beda290
+
+Header部分数据：
+- validate-algorithms: HmacSHA256
+- validate-appkey: uasdfk-76d0-4f6e-a6b2-asdfdas
+- validate-recvwindow: 5000
+- validate-timestamp: 1717234493000
+- validate-signature: 1231312318f13dc27dbbd02c2cc51ff7059765ed12313131
+
+### 请求数据
 
        { type: 'LIMIT', timeInForce: 'GTC', side: 'BUY', symbol: 'btc_usdt', price: '69000', quantity: '1' }
 
-#### 1. 数据部分  
+#### 1. 数据部分
 
 - `method`: 大写的请求方法，例如：GET、POST、DELETE、PUT
 
@@ -80,7 +82,7 @@ validate-signature: 1231312318f13dc27dbbd02c2cc51ff7059765ed12313131
 
 - `body`: 直接按JSON字符串不做转换或排序操作。
 
-    x-www-form-urlencoded: 按照key的字典序排序，将所有key=value进行拼接，示例:userName=dfdfdf&password=ggg　
+  x-www-form-urlencoded: 按照key的字典序排序，将所有key=value进行拼接，示例:userName=dfdfdf&password=ggg　
     
     form-data：此格式暂不支持。
 
@@ -109,17 +111,17 @@ x-www-form-urlencoded:
     
     上述值拼接记作body
 
-- 混合使用query与body(分为表单与json两种格式)  
+- 混合使用query与body(分为表单与json两种格式)
 
 `query`:
 
-symbol=btc_usdt&side=BUY&type=LIMIT  
+symbol=btc_usdt&side=BUY&type=LIMIT
 
 上述拼接值记作query
 
 `body`:
 
-`{"symbol":"btc_usdt","side":BUY,"type":"LIMIT"}` 
+`{"symbol":"btc_usdt","side":BUY,"type":"LIMIT"}`
 
 上述拼接值记作body
 
@@ -136,13 +138,13 @@ query无数据，body有数据：Y=#method#path#body
 
 query有数据，body有数据：Y=#method#path#query#body
 
-#### 2. 请求头部分  
+#### 2. 请求头部分
 
-将key按照字母自然升序后，使用&方式拼接在一起，作为X。如：  
+将key按照字母自然升序后，使用&方式拼接在一起，作为X。如：
 
 > validate-algorithms=HmacSHA256&validate-appkey=uasdfk-76d0-4f6e-a6b2-asdfdas&validate-recvwindow=5000&validate-timestamp=1641446237201
 
-#### 3. 生成签名  
+#### 3. 生成签名
 
 最终把需要进行加密的字符串，记作为original=XY
 
@@ -154,22 +156,22 @@ signature=org.apache.commons.codec.digest.HmacUtils.hmacSha256Hex(secretkey, ori
 
 将生成的签名singature放到请求头中，以validate-signature为Key，以singature为值。
 
-#### 4. 样例  
+#### 4. 样例
 
 - 签名原始报文样例：  
   `validate-algorithms=HmacSHA256&validate-appkey=uasdfk-76d0-4f6e-a6b2-asdfdas&validate-recvwindow=60000&validate-timestamp=1666026215729#POST#/v1/spot/order/order#{"symbol":"BTC_USDT","side":"BUY","type":"LIMIT","timeInForce":"GTC","bizType":"SPOT","price":69000,"quantity":2}`
 
 - 请求报文样例：
 
-    curl --location --request POST 'http://api.ubit.site/v1/spot/order' 
-    --header 'accept: */*' 
-    --header 'Content-Type: application/json' 
-    --header 'validate-algorithms: HmacSHA256' 
-    --header 'validate-appkey: uasdfk-76d0-4f6e-a6b2-asdfdas'
-    --header 'validate-recvwindow: 60000' 
-    --header 'validate-timestamp: 1717234493000' 
-    --header 'validate-signature: 1231312318f13dc27dbbd02c2cc51ff7059765ed12313131' 
-    --data-raw '{"symbol":"BTC_USDT","side":"BUY","type":"LIMIT","timeInForce":"GTC","bizType":"SPOT","price":69000,"quantity":2}'
+  curl --location --request POST 'http://api.ubit.site/v1/spot/order'
+  --header 'accept: */*'
+  --header 'Content-Type: application/json'
+  --header 'validate-algorithms: HmacSHA256'
+  --header 'validate-appkey: uasdfk-76d0-4f6e-a6b2-asdfdas'
+  --header 'validate-recvwindow: 60000'
+  --header 'validate-timestamp: 1717234493000'
+  --header 'validate-signature: 1231312318f13dc27dbbd02c2cc51ff7059765ed12313131'
+  --data-raw '{"symbol":"BTC_USDT","side":"BUY","type":"LIMIT","timeInForce":"GTC","bizType":"SPOT","price":69000,"quantity":2}'
 
 - 注意事项：
 
@@ -184,10 +186,10 @@ signature=org.apache.commons.codec.digest.HmacUtils.hmacSha256Hex(secretkey, ori
 
 ```json
 {
-    "code": 0,  
-    "data": {},
-    "msg": "SUCCESS",
-    "msgInfo": []
+  "code": 0,
+  "data": {},
+  "msg": "SUCCESS",
+  "msgInfo": []
 }
 ```
 

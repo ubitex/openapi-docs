@@ -55,16 +55,18 @@ apiKey限流示例说明：50/s/apiKey，表示每个apiKey每秒该接口请求
 ### 签名生成
 
 以http://api.ubit.site/v1/spot 为例  
-以下是在linux bash环境下使用 echo openssl 和curl工具实现的一个调用接口下单的示例  
-appkey、secret仅供示范:  
-appKey: uasdfk-76d0-4f6e-a6b2-asdfdas    
-secretKey: bc6630d0231fda5cd98794f52c4998659beda290  
-Header部分数据：  
-validate-algorithms: HmacSHA256  
-validate-appkey: uasdfk-76d0-4f6e-a6b2-asdfdas  
-validate-recvwindow: 5000  
-validate-timestamp: 1717234493000  
-validate-signature: 1231312318f13dc27dbbd02c2cc51ff7059765ed12313131
+以下是在linux bash环境下使用 echo openssl 和curl工具实现的一个调用接口下单的示例
+
+appkey、secret仅供示范:
+- appKey: uasdfk-76d0-4f6e-a6b2-asdfdas
+- secretKey: bc6630d0231fda5cd98794f52c4998659beda290
+
+Header部分数据：
+- validate-algorithms: HmacSHA256
+- validate-appkey: uasdfk-76d0-4f6e-a6b2-asdfdas
+- validate-recvwindow: 5000
+- validate-timestamp: 1717234493000
+- validate-signature: 1231312318f13dc27dbbd02c2cc51ff7059765ed12313131
 
 ### 请求数据
 
@@ -184,10 +186,10 @@ signature=org.apache.commons.codec.digest.HmacUtils.hmacSha256Hex(secretkey, ori
 
 ```json
 {
-    "code": 0,  
-    "data": {},
-    "msg": "SUCCESS",
-    "msgInfo": []
+  "code": 0,
+  "data": {},
+  "msg": "SUCCESS",
+  "msgInfo": []
 }
 ```
 
