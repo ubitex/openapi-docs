@@ -20,7 +20,7 @@
 
 ### 请求示例
 
-```
+```shell
 curl --location --request POST 'https://api.ubit.site/v1/spot/order' \
 --header 'Content-Type: application/json' \
 --header 'validate-algorithms: HmacSHA256' \

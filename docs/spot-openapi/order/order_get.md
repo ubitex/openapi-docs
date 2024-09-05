@@ -11,7 +11,7 @@
 
 ### 请求示例
 
-```
+```shell
 curl --location --request GET 'https://api.ubit.site/v1/spot/order?orderId=401878710881651008&clientOrderId' \
 --header 'validate-algorithms: HmacSHA256' \
 --header 'validate-appkey: 2fa91add-388c-44f2-8365-f4b72886c135' \

@@ -12,7 +12,7 @@
 
 ### 请求示例
 
-```
+```shell
 curl --location --request DELETE 'https://api.ubit.site/v1/spot/batch-order' \
 --header 'Content-Type: application/json' \
 --header 'validate-algorithms: HmacSHA256' \

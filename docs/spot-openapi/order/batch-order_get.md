@@ -10,7 +10,7 @@
 
 ### 请求示例
 
-```
+```shell
 curl --location --request GET 'https://api.ubit.site/v1/spot/batch-order?orderIds=401876438755871040,401653869310150976&abc=' \
 --header 'validate-algorithms: HmacSHA256' \
 --header 'validate-appkey: 2fa91add-388c-44f2-8365-f4b72886c135' \
