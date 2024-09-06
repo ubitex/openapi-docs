@@ -6,33 +6,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     <meta name="description" content="Description">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <link rel="stylesheet" href="./lib/vue.min.css">
+    <link rel="stylesheet" href="lib/vue.min.css">
     <link rel="shortcut icon" type="image/x-icon" href="_media/favicon.ico">
 </head>
 <body>
 
-<div id="app">加载中...</div>
+<div id="app">Loading..</div>
 
 <script>
     window.$docsify = {
-        loadNavbar: '_navbar.md',
-        loadSidebar: '_sidebar.md',
+        loadNavbar: true,
+        loadSidebar: true,
         name: 'UBitEx OpenAPI',
         repo: 'https://github.com/ubitex/api-ubitex.com',
-        nameLink: '/openapi-docs/#',
+        nameLink: {
+            '/en/': '#/en/',
+            '/': '#/zh-cn/',
+        },
         auto2top: true, // 是否在切换页面后回到顶部
         topMargin: 40, // default: 0
         relativePath: true,
-        coverpage: true,
+        coverpage: ['/en/', '/'],
         mergeNavbar: true,
         subMaxLevel: 6,
-        notFoundPage: true,
+        notFoundPage: {
+            '/en': '/en/_404.md',
+            '/': '/zh-cn/_404.md',
+        },
         autoHeader: true,
         formatUpdated: '{MM}/{DD} {HH}:{mm}',
         search: {
-            placeholder: '搜索',
+            pathNamespaces: ['/en', '/'],
+            placeholder: {
+                '/en': 'Search',
+                '/': '搜索'
+            },
             paths: 'auto',
-            noData: '找不到结果',
+            noData: {
+                '/en': 'Can\'t find the result',
+                '/': '找不到结果',
+            },
             depth: 3,
         },
         pagination: {
@@ -60,32 +73,32 @@
     }
 </script>
 <!-- Docsify v4 -->
-<script src="./lib/docsify.min.js"></script>
-<script src="./lib/emoji.min.js"></script>
+<script src="lib/docsify.min.js"></script>
+<script src="lib/emoji.min.js"></script>
 <!--复制代码-->
-<script src="./lib/docsify-copy-code.min.js"></script>
+<script src="lib/docsify-copy-code.min.js"></script>
 <!--全文搜索-->
-<script src="./lib/search.min.js"></script>
+<script src="lib/search.min.js"></script>
 <!--文章分页-->
-<script src="./lib/docsify-pagination.min.js"></script>
+<script src="lib/docsify-pagination.min.js"></script>
 <!--代码高亮-->
-<script src="./lib/prism-sql.min.js"></script>
-<script src="./lib/prism-java.min.js"></script>
-<script src="./lib/prism-yaml.min.js"></script>
-<script src="./lib/prism-bash.min.js"></script>
-<script src="./lib/prism-git.min.js"></script>
-<script src="./lib/prism-properties.min.js"></script>
-<script src="./lib/prism-json.min.js"></script>
-<script src="./lib/prism-json5.min.js"></script>
-<script src="./lib/prism-log.min.js"></script>
+<script src="lib/prism-sql.min.js"></script>
+<script src="lib/prism-java.min.js"></script>
+<script src="lib/prism-yaml.min.js"></script>
+<script src="lib/prism-bash.min.js"></script>
+<script src="lib/prism-git.min.js"></script>
+<script src="lib/prism-properties.min.js"></script>
+<script src="lib/prism-json.min.js"></script>
+<script src="lib/prism-json5.min.js"></script>
+<script src="lib/prism-log.min.js"></script>
 <!-- img点击放大 -->
-<script src="./lib/zoom-image.min.js"></script>
+<script src="lib/zoom-image.min.js"></script>
 <!--底部栏目-->
-<script src="./lib/docsify-footer-enh.min.js"></script>
+<script src="lib/docsify-footer-enh.min.js"></script>
 <!--回到顶部-->
-<script src="./lib/docsify-scroll-to-top.min.js"></script>
+<script src="lib/docsify-scroll-to-top.min.js"></script>
 <!--侧边栏目录展开和折叠-->
-<script src="./lib/docsify-sidebar-collapse.min.js"></script>
+<script src="lib/docsify-sidebar-collapse.min.js"></script>
 </body>
 
 <script>
@@ -108,6 +121,7 @@
         height: 100%;
         overflow: hidden;
     }
+
     .app-nav {
         position: fixed;
         top: 0;

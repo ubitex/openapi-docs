@@ -1,9 +1,9 @@
 <!-- _navbar.md -->
 
-* [首页](/)
+* [首页](/zh-cn/)
 
-* [现货](/spot/README.md)
+* [现货](/zh-cn/spot/market/public_time)
 
-* [合约](/future-u/README.md)
+* [合约](/zh-cn/future-u/market/symbol_all)
 
-* [代码示例](https://github.com/ubitex/api-ubitex.com)
+* [English](/en/)

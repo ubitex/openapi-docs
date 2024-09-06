@@ -1,7 +1,4 @@
-## 概述
-
 欢迎使用 UBitEx API 文档。 UBitEx 提供 REST API来满足您的交易需求。
-
 
 ## API 资源和支持
 

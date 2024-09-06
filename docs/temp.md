@@ -1,6 +1,6 @@
-获取币种信息
+XXXX
 
-`GET` /public/currencies
+`GET` XXXX
 
 ## 请求参数
 

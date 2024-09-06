@@ -21,10 +21,10 @@
 <!-- # lemon-framework <small>1.0.0.RELEASE</small> -->
 
 
-- 全球用户与投资人零距离互动
-- 热门加密货币，把握交易良机
-- 加密交易，就来UbitEx
+- Interact With Global Traders
+- Trade the Hottest Coins
+- Trade Crypto on UbitEx
 
 
 [GitHub](https://github.com/ubitex/api-ubitex.com)
-[Get Started](/zh-cn/README.md)
+[Get Started](/en/README.md)
