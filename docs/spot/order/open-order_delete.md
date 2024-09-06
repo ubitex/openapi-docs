@@ -11,7 +11,7 @@
 | side    | body | string | 是  | BUY-买,SELL-卖	           |
 | mode    | body | string | 是  | 模式：CMD-命令式,ITERATOR-迭代式 |
 
-### 请求示例
+> 请求示例
 
 ```shell
 curl --location --request DELETE 'https://api.ubit.site/v1/spot/open-order' \

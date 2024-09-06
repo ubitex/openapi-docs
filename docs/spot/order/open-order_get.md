@@ -11,7 +11,7 @@
 | side    | query | string | 是  | BUY-买,SELL-卖	           |
 | limit   | query | string | 是  | 条数                      |
 
-### 请求示例
+> 请求示例
 
 ```shell
 curl --location --request GET 'https://api.ubit.site/v1/spot/open-order?symbol=btc_usdt&bizType=SPOT&side=BUY&limit=10' \

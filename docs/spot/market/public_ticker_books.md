@@ -10,7 +10,7 @@
 | symbols | query | array[string] | 否   | 交易对集合，不传时，返回全量 |
 | tags    | query | string        | 否   | 标签集合                     |
 
-### 请求示例
+> 请求示例
 
 ```shell
 curl --location --request GET 'https://api.ubit.site/v1/spot/public/ticker/book?symbol=btc_usdt&symbols=&tags' \

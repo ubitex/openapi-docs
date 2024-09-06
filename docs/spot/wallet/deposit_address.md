@@ -9,7 +9,7 @@
 | currency | query | string | 是   | 币种   |
 | chain    | query | string | 是   | 充值链 |
 
-### 请求示例
+> 请求示例
 
 ```shell
 curl --location --request GET 'https://api.ubit.site/v1/spot/deposit/address?currency=usdt&chain=Tron' \

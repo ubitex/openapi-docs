@@ -2,10 +2,10 @@
 
 `GET` v1/future-u/market/public/q/agg-tickers
 
+
 ## 请求参数
 
-### 请求示例
-
+> 请求示例
 ```shell
 curl --location --request GET 'https://api.ubit.site/v1/future-u/market/public/q/agg-tickers' \
 --header 'validate-algorithms: HmacSHA256' \

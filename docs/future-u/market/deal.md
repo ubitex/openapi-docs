@@ -9,7 +9,7 @@
 | symbol | query | string  | 是  | 交易对 |
 | num    | query | integer | 是  | 数量  |
 
-### 请求示例
+> 请求示例
 
 ```shell
 curl --location --request GET 'https://api.ubit.site/v1/future-u/market/public/q/deal?symbol=btc_usdt&num=2' \

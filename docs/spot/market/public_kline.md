@@ -12,7 +12,7 @@
 | endTime   | query | integer | 否   | 结束时间                                                 |
 | limit     | query | integer | 否   | 限制数量                                                 |
 
-### 请求示例
+> 请求示例
 
 ```shell
 curl --location --request GET 'https://api.ubit.site/v1/spot/public/kline?symbol=btc_usdt&interval=1m&startTime&endTime&limit=5' \

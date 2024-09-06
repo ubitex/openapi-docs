@@ -11,7 +11,7 @@
 | fromId    | query | integer | 否   | 起始ID                           |
 | limit     | query | integer | 否   | 数量                             |
 
-### 请求示例
+> 请求示例
 
 ```shell
 curl --location --request GET 'https://api.ubit.site/v1/spot/public/trade/history?symbol=btc_usdt&direction=NEXT&fromId&limit=2' \

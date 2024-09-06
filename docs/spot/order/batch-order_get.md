@@ -8,7 +8,7 @@
 |----------|-------|--------|----|----------------|
 | orderIds | query | string | 是  | 订单ID集合(最多100条) |
 
-### 请求示例
+> 请求示例
 
 ```shell
 curl --location --request GET 'https://api.ubit.site/v1/spot/batch-order?orderIds=401876438755871040,401653869310150976&abc=' \

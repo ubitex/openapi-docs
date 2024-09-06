@@ -8,7 +8,7 @@
 |------|-------|--------|----|-------------|
 | coin | query | string | 否  | 币种，多个币种用,隔开 |
 
-### 请求示例
+> 请求示例
 
 ```shell
 curl --location --request GET 'https://api.ubit.site/v1/future-u/market/public/symbol/coin/detail?coin=btc' \

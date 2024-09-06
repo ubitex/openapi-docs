@@ -18,7 +18,7 @@
 | endTime        | query | integer | 否  | 结束时间                                                                                                     |
 | hiddenCanceled | query | boolean | 否  | 隐藏已取消                                                                                                    |
 
-### 请求示例
+> 请求示例
 
 ```shell
 curl --location --request GET 'https://api.ubit.site/v1/spot/history-order?symbol=btc_usdt&bizType=SPOT&type&side&state&fromId&direction&limit&startTime&endTime&hiddenCanceled' \

@@ -9,7 +9,7 @@
 | orderId       | query | string | 否  | 订单ID   |
 | clientOrderId | query | string | 否  | 客户端订单号 |
 
-### 请求示例
+> 请求示例
 
 ```shell
 curl --location --request GET 'https://api.ubit.site/v1/spot/order?orderId=401878710881651008&clientOrderId' \

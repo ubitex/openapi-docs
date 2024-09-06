@@ -5,7 +5,7 @@
 ## 请求参数
 无
 
-### 请求示例
+> 请求示例
 
 ```shell
 curl --location --request GET 'https://api.ubit.site/v1/spot/public/currencies?accessKey=2fa91add-388c-44f2-8365-f4b72886c135&secretKey=6fb7fc1dde997cc03e75a460d07184c9c9a14704' \

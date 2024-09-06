@@ -16,7 +16,7 @@
 | quantity      | number | false | none |     | 数量。现价必填；市价按数量下单时必填                    |
 | quoteQty      | number | false | none |     | 金额。现价不填；市价按金额下单时必填                    |
 
-### 请求示例
+> 请求示例
 
 ```shell
 curl --location --request POST 'https://api.ubit.site/v1/spot/order' \

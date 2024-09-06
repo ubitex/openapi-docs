@@ -17,7 +17,7 @@
 | endTime   | query | integer | 否  | 结束时间                               |
 | limit     | query | integer | 否  | 限制数量,最大100                         |
 
-### 请求示例
+> 请求示例
 
 ```shell
 curl --location --request GET 'https://api.ubit.site/v1/spot/trade?symbol&orderSide&orderType&bizType=SPOT&orderId&fromId&direction&startTime=&endTime=&limit=20' \

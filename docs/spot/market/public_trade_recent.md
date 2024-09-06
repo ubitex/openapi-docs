@@ -11,7 +11,7 @@
 | symbol | query | string  | 否   | 交易对 |
 | limit  | query | integer | 否   | 数量   |
 
-### 请求示例
+> 请求示例
 
 ```shell
 curl --location --request GET 'https://api.ubit.site/v1/spot/public/trade/recent?symbol=btc_usdt&limit=2' \

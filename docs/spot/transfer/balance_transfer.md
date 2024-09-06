@@ -15,7 +15,7 @@
 | remark   | body | string | false | 备注                                           |
 | toRemark | body | string | false | 备注                                           |
 
-### 请求示例
+> 请求示例
 
 ```shell
 curl --location --request POST 'https://api.ubit.site/v1/spot/balance/transfer' \

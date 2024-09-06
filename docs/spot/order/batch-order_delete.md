@@ -10,7 +10,7 @@
 | symbol        | body | string | 是  | 交易对         |
 | orderIds      | body | string | 是  | 订单集合, <=300 |
 
-### 请求示例
+> 请求示例
 
 ```shell
 curl --location --request DELETE 'https://api.ubit.site/v1/spot/batch-order' \

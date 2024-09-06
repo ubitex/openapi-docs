@@ -12,7 +12,7 @@
 | address  | body | string | true  | 提币地址     |
 | memo     | body | string | false | memo     |
 
-### 请求示例
+> 请求示例
 
 ```shell
 curl --location --request POST 'https://api.ubit.site/v1/spot/withdraw' \

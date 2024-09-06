@@ -8,7 +8,7 @@
 |----------|-------|--------|----|----|
 | currency | query | string | 否  | 币种 |
 
-### 请求示例
+> 请求示例
 
 ```shell
 curl --location --request GET 'https://api.ubit.site/v1/spot/balance?currency=USDT' \

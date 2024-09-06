@@ -11,7 +11,7 @@
 | direction | query | string  | 否   | 方向（PREV:上一页；NEXT:下一页） |
 | limit     | query | integer | 否   | 条数                             |
 
-### 请求示例
+> 请求示例
 
 ```shell
 curl --location --request GET 'https://api.ubit.site/v1/future-u/market/public/q/funding-rate-record?symbol=btc_usdt&id&direction&limit' \

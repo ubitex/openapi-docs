@@ -14,7 +14,7 @@
 | page      | query | integer | 否   | 页码     |
 | size      | query | integer | 否   | 页大小   |
 
-### 请求示例
+> 请求示例
 
 ```shell
 curl --location --request GET 'https://api.ubit.site/v1/spot/deposit/history?currency=USDT&chain=Tron&startTime&endTime&status&page=1&size=10' \

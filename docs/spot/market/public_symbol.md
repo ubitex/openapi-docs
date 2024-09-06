@@ -11,7 +11,7 @@
 | symbols | query | array[string] | 否   | 交易对集合                                                  |
 | version | query | string        | 否   | 版本号,当请求版本号与响应内容版本一致时，不返回清单，减少IO |
 
-### 请求示例
+> 请求示例
 
 ```shell
 curl --location --request GET 'https://api.ubit.site/v1/spot/public/symbol?symbol=btc_usdt&symbols=&version&tags' \

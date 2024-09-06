@@ -8,7 +8,7 @@
 |--------|-------|--------|----|-----|
 | symbol | query | string | 是  | 交易对 |
 
-### 请求示例
+> 请求示例
 
 ```shell
 curl --location --request GET 'https://api.ubit.site/v1/future-u/market/public/q/funding-rate?symbol=btc_usdt' \

@@ -8,7 +8,7 @@
 |---------|------|--------|----|------|
 | orderId | path | string | 是  | 订单ID |
 
-### 请求示例
+> 请求示例
 
 ```shell
 curl --location --request DELETE 'https://api.ubit.site/v1/spot/order/401629267720702272' \

@@ -14,7 +14,7 @@
 | startTime | query | integer | 否   | 开始时间                |
 | endTime   | query | integer | 否   | 结束时间                |
 
-### 请求示例
+> 请求示例
 
 ```shell
 curl --location --request GET 'https://api.ubit.site/v1/spot/withdraw/history?currency=usdt&chain=Tron&status&fromId&direction=NEXT&limit=10&startTime&endTime' \

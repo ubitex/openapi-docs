@@ -11,7 +11,7 @@
 | tags    | query | string        | 否   | 标签集合                     |
 
 
-### 请求示例
+> 请求示例
 
 ```shell
 curl --location --request GET 'https://api.ubit.site/v1/spot/public/ticker/price?symbol=btc_usdt&symbols=&tags' \

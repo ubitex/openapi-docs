@@ -9,7 +9,7 @@
 |---------|-------|--------|----|------|
 | orderId | path  | string | 是  | 订单ID |
 
-### 请求示例
+> 请求示例
 
 ```shell
 curl --location --request GET 'https://api.ubit.site/v1/spot/order/401878710881651008' \

@@ -7,7 +7,7 @@
 无
 
 
-### 请求示例
+> 请求示例
 
 ```shell
 curl --location --request GET 'https://api.ubit.site/v1/spot/public/time' \
