@@ -11,7 +11,7 @@
     * [查询历史成交列表](/spot/market/public_trade_history)
     * [完整ticker](/spot/market/public_ticker)
     * [获取最新价格ticker](/spot/market/public_ticker_price)
-    * [获取最优挂单ticker](/spot/market/public_ticker_book)
+    * [获取最优挂单ticker](/spot/market/public_ticker_books)
     * [获取24h统计ticker](/spot/market/public_ticker_24h)
 
 * [订单]()
