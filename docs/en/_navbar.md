@@ -1,6 +1,6 @@
 <!-- _navbar.md -->
 
-* [HOME](/en/)
+* [Index](/en/)
 
 * [Spot](/en/spot/)
 
