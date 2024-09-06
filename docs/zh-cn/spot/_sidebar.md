@@ -14,13 +14,13 @@
 
 * 订单
     * [单笔下单](/zh-cn/spot/order/order_create)
-    * [单笔撤单](/zh-cn/spot/order/order_delete)
-    * [单笔查询](/zh-cn/spot/order/order_get)
     * [单笔获取](/zh-cn/spot/order/order_get_path)
-    * [批量撤单](/zh-cn/spot/order/batch-order_delete)
+    * [单笔查询](/zh-cn/spot/order/order_get)
     * [批量查询](/zh-cn/spot/order/batch-order_get)
-    * [查询当前挂单](/zh-cn/spot/order/open-order_get)
+    * [单笔撤单](/zh-cn/spot/order/order_delete)
+    * [批量撤单](/zh-cn/spot/order/batch-order_delete)
     * [撤销当前挂单](/zh-cn/spot/order/open-order_delete)
+    * [查询当前挂单](/zh-cn/spot/order/open-order_get)
     * [历史订单查询](/zh-cn/spot/order/history-order)
 
 
