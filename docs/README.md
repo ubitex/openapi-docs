@@ -8,7 +8,7 @@
 
 GET请求参数放入query Params中，POST请求参数放入request body中
 
-请求头信息请设置为：Content-Type=application/json
+请求头信息请设置为：`Content-Type=application/json`
 
 对于/public以外开头的请求，需要对请求报文进行签名
 
@@ -16,13 +16,13 @@ GET请求参数放入query Params中，POST请求参数放入request body中
 
 部分接口会有限流控制(对应接口下会有限流说明)，限流主要分为网关限流和WAF限流。
 
-若接口请求触发了网关限流则会返回429，表示警告访问频次超限，即将被封IP或者apiKey。
+若接口请求触发了网关限流则会返回`429`，表示警告访问频次超限，即将被封IP或者apiKey。
 
 网关限流分为针对IP和apiKey限流。
 
-IP限流示例说明：100/s/ip，表示每个IP每秒该接口请求次数限制。
+IP限流示例说明：`100/s/ip`，表示每个IP每秒该接口请求次数限制。
 
-apiKey限流示例说明：50/s/apiKey，表示每个apiKey每秒该接口请求次数限制。
+apiKey限流示例说明：`50/s/apiKey`，表示每个apiKey每秒该接口请求次数限制。
 
 ## 签名说明
 
@@ -30,11 +30,11 @@ apiKey限流示例说明：50/s/apiKey，表示每个apiKey每秒该接口请求
 
 1. 先通过用户中心申请appkey和secretkey，针对不同的调用，提供不同的appkey和secretkey。
 
-2. 加入timestamp(时间戳)，其值应当是请求发送时刻的unix时间戳(毫秒)，数据的有郊时间根据此值来计算。
+2. 加入`timestamp`(时间戳)，其值应当是请求发送时刻的unix时间戳(毫秒)，数据的有郊时间根据此值来计算。
 
-3. 加入signature(数据签名)，所有数据的签名信息。
+3. 加入`signature`(数据签名)，所有数据的签名信息。
 
-4. 加入recvwindow(自定义请求有效时间)，有效时间目前相对简单统一固定为某个值。
+4. 加入`recvwindow`(自定义请求有效时间)，有效时间目前相对简单统一固定为某个值。
 
    > 服务器收到请求时会判断请求中的时间戳，最长60秒，最小为2秒，如果是5000毫秒之前发出的，则请求会被认为无效。  
    这个时间窗口值可以通过发送可选参数recvWindow来设置。 另外，如果服务器计算得出客户端时间戳在服务器时间的‘未来’一秒以上，也会拒绝请求。
@@ -47,25 +47,27 @@ apiKey限流示例说明：50/s/apiKey，表示每个apiKey每秒该接口请求
 
 ### 签名生成
 
-以http://api.ubit.site/v1/spot 为例  
+以 http://api.ubit.site/v1/spot 为例  
 以下是在linux bash环境下使用 echo openssl 和curl工具实现的一个调用接口下单的示例
 
 appkey、secret仅供示范:
 
-- appKey: uasdfk-76d0-4f6e-a6b2-asdfdas
-- secretKey: bc6630d0231fda5cd98794f52c4998659beda290
+- `appKey`: uasdfk-76d0-4f6e-a6b2-asdfdas
+- `secretKey`: bc6630d0231fda5cd98794f52c4998659beda290
 
 Header部分数据：
 
-- validate-algorithms: HmacSHA256
-- validate-appkey: uasdfk-76d0-4f6e-a6b2-asdfdas
-- validate-recvwindow: 5000
-- validate-timestamp: 1717234493000
-- validate-signature: 1231312318f13dc27dbbd02c2cc51ff7059765ed12313131
+- `validate-algorithms`: HmacSHA256
+- `validate-appkey`: uasdfk-76d0-4f6e-a6b2-asdfdas
+- `validate-recvwindow`: 5000
+- `validate-timestamp`: 1717234493000
+- `validate-signature`: 1231312318f13dc27dbbd02c2cc51ff7059765ed12313131
 
 ### 请求数据
 
-       { type: 'LIMIT', timeInForce: 'GTC', side: 'BUY', symbol: 'btc_usdt', price: '69000', quantity: '1' }
+```json
+{"symbol":"BTC_USDT","clientOrderId":"16559590087220001","side":"BUY","type":"LIMIT","timeInForce":"FOK","bizType":"SPOT","price":40000,"quantity":2}
+```
 
 #### 1. 数据部分
 
@@ -77,7 +79,7 @@ Header部分数据：
 
 - `body`: 直接按JSON字符串不做转换或排序操作。
 
-  x-www-form-urlencoded: 按照key的字典序排序，将所有key=value进行拼接，示例:userName=dfdfdf&password=gggform-data：此格式暂不支持。
+- `x-www-form-urlencoded`: 按照key的字典序排序，将所有key=value进行拼接，示例:userName=dfdfdf&password=gggform-data：此格式暂不支持。
 
 如果存在多种数据形式，则按照path、query、body的顺序进行再拼接，得到所有数据的拼接值。
 
@@ -92,35 +94,40 @@ Header部分数据：
 上述值拼接记作 query
 
 参数通过body示例：  
-x-www-form-urlencoded:
+`x-www-form-urlencoded`:
 
-    symbol=btc_usdt&side=BUY&type=LIMIT&timeInForce=GTC&quantity=1&price=69000
+```
+symbol=btc_usdt&side=BUY&type=LIMIT&timeInForce=GTC&quantity=1&price=69000
+```
     
-    上述值拼接记作body
+上述值拼接记作body
 
 `json`:
 
-    {"symbol":"btc_usdt","side":"BUY","type":"LIMIT","timeInForce":"GTC","quantity":1,"price":69000}
-    
-    上述值拼接记作body
+```json
+{"symbol":"BTC_USDT","clientOrderId":"16559590087220001","side":"BUY","type":"LIMIT","timeInForce":"FOK","bizType":"SPOT","price":40000,"quantity":2}
+```
+
+上述值拼接记作body
 
 - 混合使用query与body(分为表单与json两种格式)
 
 `query`:
 
+```
 symbol=btc_usdt&side=BUY&type=LIMIT
+```
 
 上述拼接值记作query
 
 `body`:
 
-`{"symbol":"btc_usdt","side":BUY,"type":"LIMIT"}`
+```json
+{"symbol":"BTC_USDT","clientOrderId":"16559590087220001","side":"BUY","type":"LIMIT","timeInForce":"FOK","bizType":"SPOT","price":40000,"quantity":2}
+```
 
 上述拼接值记作body
 
-`query`:  
-`symbol=btc_usdt&side=BUY&type=LIMIT`
-上述拼接值记作query
 
 整个数据最且拼接值由#符号分别与method、path、query、body进行拼接成#method、#path、#query、#body，
 最终拼接值记作为Y=#method#path#query#body。 注意:
@@ -135,8 +142,7 @@ query有数据，body有数据：Y=#method#path#query#body
 
 将key按照字母自然升序后，使用&方式拼接在一起，作为X。如：
 
->
-validate-algorithms=HmacSHA256&validate-appkey=uasdfk-76d0-4f6e-a6b2-asdfdas&validate-recvwindow=5000&validate-timestamp=1641446237201
+> `validate-algorithms=HmacSHA256&validate-appkey=uasdfk-76d0-4f6e-a6b2-asdfdas&validate-recvwindow=5000&validate-timestamp=1641446237201`
 
 #### 3. 生成签名
 
@@ -145,7 +151,7 @@ validate-algorithms=HmacSHA256&validate-appkey=uasdfk-76d0-4f6e-a6b2-asdfdas&val
 最后将最终拼接值按照如下方法进行加密得到签名。
 
 ```java
-signature=org.apache.commons.codec.digest.HmacUtils.hmacSha256Hex(secretkey, original);
+String signature=org.apache.commons.codec.digest.HmacUtils.hmacSha256Hex(secretkey, original);
 ```
 
 将生成的签名singature放到请求头中，以validate-signature为Key，以singature为值。
@@ -153,21 +159,24 @@ signature=org.apache.commons.codec.digest.HmacUtils.hmacSha256Hex(secretkey, ori
 #### 4. 样例
 
 - 签名原始报文样例：  
-  `validate-algorithms=HmacSHA256&validate-appkey=uasdfk-76d0-4f6e-a6b2-asdfdas&validate-recvwindow=60000&validate-timestamp=1666026215729#POST#/v1/spot/order/order#{"symbol":"BTC_USDT","side":"BUY","type":"LIMIT","timeInForce":"GTC","bizType":"SPOT","price":69000,"quantity":2}`
+
+> `validate-algorithms=HmacSHA256&validate-appkey=uasdfk-76d0-4f6e-a6b2-asdfdas&validate-recvwindow=60000&validate-timestamp=1666026215729#POST#/v1/spot/order/order#{"symbol":"BTC_USDT","side":"BUY","type":"LIMIT","timeInForce":"GTC","bizType":"SPOT","price":69000,"quantity":2}`
 
 - 请求报文样例：
 
-  curl --location --request POST 'http://api.ubit.site/v1/spot/order'
-  --header 'accept: */*'
-  --header 'Content-Type: application/json'
-  --header 'validate-algorithms: HmacSHA256'
-  --header 'validate-appkey: uasdfk-76d0-4f6e-a6b2-asdfdas'
-  --header 'validate-recvwindow: 60000'
-  --header 'validate-timestamp: 1717234493000'
-  --header 'validate-signature: 1231312318f13dc27dbbd02c2cc51ff7059765ed12313131'
-  --data-raw '{"symbol":"BTC_USDT","side":"BUY","type":"LIMIT","timeInForce":"GTC","bizType":"SPOT","price":69000,"
-  quantity":2}'
-
+```shell
+curl --location --request POST 'https://api.ubit.site/v1/spot/order' \
+--header 'Content-Type: application/json' \
+--header 'validate-algorithms: HmacSHA256' \
+--header 'validate-appkey: 2fa91add-388c-44f2-8365-f4b72886c135' \
+--header 'validate-recvwindow: 6000' \
+--header 'validate-timestamp: 1725455266041' \
+--header 'validate-signature: ce246607785e168d4677afff5af3746eb8513133d11ca3c5e3913eeea5aca63c' \
+--header 'Accept: */*' \
+--header 'Host: api.ubit.site' \
+--header 'Connection: keep-alive' \
+--data-raw '{"symbol":"BTC_USDT","clientOrderId":"16559590087220001","side":"BUY","type":"LIMIT","timeInForce":"FOK","bizType":"SPOT","price":40000,"quantity":2}'
+```
 - 注意事项：
 
   注意检查 Content-Type、签名原始报文中的参数格式、请求报文中的参数格式  
