@@ -7,7 +7,7 @@
 | 名称             | 位置    | 类型      | 必选 | 说明                                                                                                       |
 |----------------|-------|---------|----|----------------------------------------------------------------------------------------------------------|
 | symbol         | query | string  | 否  | 交易对，不传代表所有                                                                                               |
-| bizType        | query | string  | 否  | 业务类型，SPOT-现货, LEVER-杠杆                                                                                   |
+| bizType        | query | string  | 否  | 业务类型，SPOT-现货                                                                                             |
 | type           | query | string  | 否  | 订单类型，LIMIT-现价, MARKET-市价                                                                                 |
 | side           | query | string  | 否  | 订单方向，BUY-买,SELL-卖                                                                                        |
 | state          | query | string  | 否  | 状态，NEW-新建,PARTIALLY_FILLED-部分成交,FILLED-全部成交,CANCELED-用户撤单,REJECTED-下单失败,EXPIRED-过期(time_in_force撤单或溢价撤单) |

@@ -1,21 +1,21 @@
-历史成交查询
+成交查询
 
 `GET` /v1/spot/trade
 
 ## 请求参数
 
-| 名称      | 位置  | 类型    | 必选 | 说明             |
-| --------- | ----- | ------- | ---- | ---------------- |
-| symbol    | query | string  | 否   | 交易对           |
-| orderSide | query | string  | 否   | 订单方向         |
-| orderType | query | string  | 否   | 订单类型         |
-| bizType   | query | string  | 否   | 业务类型         |
-| orderId   | query | integer | 否   | 订单号           |
-| fromId    | query | integer | 否   | 分页起始         |
-| direction | query | string  | 否   | 方向             |
-| startTime | query | integer | 否   | 开始时间         |
-| endTime   | query | integer | 否   | 结束时间         |
-| limit     | query | integer | 否   | 限制数量,最大100 |
+| 名称        | 位置    | 类型      | 必选 | 说明                                 |
+|-----------|-------|---------|----|------------------------------------|
+| symbol    | query | string  | 否  | 交易对                                |
+| orderSide | query | string  | 否  | 订单方向,[枚举](/spot/README?id=买卖方向)    |
+| orderType | query | string  | 否  | 订单类型,[枚举](/spot/README?id=订单类型及含义) |
+| bizType   | query | string  | 否  | 业务类型,SPOT-现货                       |
+| orderId   | query | integer | 否  | 订单号                                |
+| fromId    | query | integer | 否  | 分页起始                               |
+| direction | query | string  | 否  | 方向                                 |
+| startTime | query | integer | 否  | 开始时间                               |
+| endTime   | query | integer | 否  | 结束时间                               |
+| limit     | query | integer | 否  | 限制数量,最大100                         |
 
 ### 请求示例
 
