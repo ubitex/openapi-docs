@@ -1,6 +1,4 @@
-Here is the translated documentation into English:
-
----
+## REST API
 
 > **Domain**: `http://api.ubit.site`
 
