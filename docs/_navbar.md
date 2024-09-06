@@ -1,6 +1,6 @@
 <!-- _navbar.md -->
 
-* [首页](/zh-cn/)
+* [首页](/)
 
 * [现货](/zh-cn/spot/market/public_time)
 

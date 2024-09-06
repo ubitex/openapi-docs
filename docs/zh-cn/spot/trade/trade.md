@@ -7,8 +7,8 @@
 | 名称        | 位置    | 类型      | 必选 | 说明                              |
 |-----------|-------|---------|----|---------------------------------|
 | symbol    | query | string  | 否  | 交易对                             |
-| orderSide | query | string  | 否  | 订单方向,[枚举](/spot/README?id=买卖方向) |
-| orderType | query | string  | 否  | 订单类型,[枚举](/spot/README?id=订单类型) |
+| orderSide | query | string  | 否  | 订单方向,[枚举](/zh-cn/README?id=买卖方向) |
+| orderType | query | string  | 否  | 订单类型,[枚举](/zh-cn/README?id=订单类型)      |
 | bizType   | query | string  | 否  | 业务类型,SPOT-现货                    |
 | orderId   | query | integer | 否  | 订单号                             |
 | fromId    | query | integer | 否  | 分页起始                            |

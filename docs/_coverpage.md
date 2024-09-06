@@ -12,14 +12,13 @@
     justify-content: center;
 }
 .brand {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 600;
     margin-right: 23px
 }
 </style>
 
 <!-- # lemon-framework <small>1.0.0.RELEASE</small> -->
-
 
 - 全球用户与投资人零距离互动
 - 热门加密货币，把握交易良机

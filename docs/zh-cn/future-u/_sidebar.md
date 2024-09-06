@@ -1,7 +1,5 @@
 <!-- docs/_sidebar -->
 
-* [接入说明](/zh-cn/README)
-
 * [市场行情]()
     * [获取所有交易对](/zh-cn/future-u/market/symbol_all)
     * [获取交易对币种](/zh-cn/future-u/market/symbol_coins)
