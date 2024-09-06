@@ -127,9 +127,7 @@ The final string to be encrypted is `original=XY`.
 Generate the signature using:
 
 ```java
-signature=org.apache.commons.codec.digest.HmacUtils.
-
-hmacSha256Hex(secretkey, original);
+signature=org.apache.commons.codec.digest.HmacUtils.hmacSha256Hex(secretkey, original);
 ```
 
 Place the generated signature in the request header as `validate-signature`, with the `signature` value.
