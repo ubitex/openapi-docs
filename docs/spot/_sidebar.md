@@ -27,7 +27,7 @@
 
 
 * [成交]()
-    * [历史成交查询](/spot/trade/trade_get)
+    * [历史成交查询](/spot/trade/trade)
 
 
 * [资产]()
