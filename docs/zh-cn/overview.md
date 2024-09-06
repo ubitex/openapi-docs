@@ -7,5 +7,5 @@
 
 
 - 客户服务
-在我们的电报组中获取支持: UBitEx API Support Group
+在我们的电报组中获取支持:  [UBitEx API Support Group](https://t.me/ubitex_api_support)
 如有疑问请咨询在线客服
