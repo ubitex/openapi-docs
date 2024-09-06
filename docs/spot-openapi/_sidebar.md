@@ -24,3 +24,22 @@
     * [查询当前挂单](/spot-openapi/order/open-order_get.md)
     * [撤销当前挂单](/spot-openapi/order/open-order_delete.md)
     * [历史订单查询](/spot-openapi/order/history-order.md)
+
+
+* 成交
+    * [历史成交查询](/spot-openapi/trade/trade_get.md)
+
+
+* 资产
+    * [获取币种信息](/spot-openapi/asset/public_currencies.md)
+    * [获取单个资产](/spot-openapi/asset/balance.md)
+    * [获取币种资产列表](/spot-openapi/asset/balances.md)
+
+
+* 充值/提现
+  * [获取可充提的币种](/spot-openapi/wallet/support_currency.md)
+  * [获取币种关联转账网络信息](/spot-openapi/asset/public_currencies.md)
+  * [提现](/spot-openapi/wallet/withdraw.md)
+  * [提现历史](/spot-openapi/wallet/withdraw_history.md)
+  * [获取充值地址](/spot-openapi/wallet/deposit_address.md)
+  * [充值历史](/spot-openapi/wallet/deposit_history.md)
