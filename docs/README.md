@@ -166,7 +166,6 @@ String signature=org.apache.commons.codec.digest.HmacUtils.hmacSha256Hex(secretk
 
 ```shell
 curl --location --request POST 'https://api.ubit.site/v1/spot/order' \
---header 'User-Agent: Apifox/1.0.0 (https://apifox.com)' \
 --header 'Content-Type: application/json' \
 --header 'validate-algorithms: HmacSHA256' \
 --header 'validate-appkey: 2fa91add-388c-44f2-8365-f4b72886c135' \
