@@ -26,9 +26,6 @@ curl --location --request GET 'https://api.ubit.site/v1/spot/public/ticker/24h?s
 
 ## 响应结果
 
-
-### 响应示例
-
 ```json
 {
   "code": 0,
