@@ -1,5 +1,8 @@
 <!-- docs/_sidebar -->
 
+* [接入说明](/zh-cn/README)
+
+
 * 市场行情
     * [获取服务器时间](/zh-cn/spot/market/public_time)
     * [获取交易对信息](/zh-cn/spot/market/public_symbol)
