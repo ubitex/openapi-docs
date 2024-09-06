@@ -9,7 +9,7 @@
 | symbol        | string | true  | none |     | 交易对                                   |
 | clientOrderId | string | false | none |     | 客户端ID(最长32位)                          |
 | side          | string | true  | none |     | 买卖方向,[枚举](/spot/README?id=买卖方向)       |
-| type          | string | true  | none |     | 订单类型,[枚举](/spot/README?id=订单类型及含义)    |
+| type          | string | true  | none |     | 订单类型,[枚举](/spot/README?id=订单类型)    |
 | timeInForce   | string | true  | none |     | 有效方式,[枚举](/spot/README.md?id=BizType) |
 | bizType       | string | true  | none |     | 业务类型,[枚举](/spot/README.md?id=BizType) |
 | price         | number | false | none |     | 价格。现价必填; 市价不填                         |
