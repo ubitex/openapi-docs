@@ -26,7 +26,7 @@ curl --location --request GET 'https://api.ubit.site/v1/spot/public/symbol?symbo
 ```
 
 
-## 响应结果TODO
+## 响应结果
 
 ```json
 {
