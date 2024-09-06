@@ -6,4 +6,6 @@
 
 * [合约](/zh-cn/future-u/market/symbol_all)
 
-* [English](/en/)
+* Translations
+  * [:us:English](/en/)
+  * [:cn:简体中文](/zh-cn/)

@@ -6,4 +6,6 @@
 
 * [Future](/en/future-u/)
 
-* [中文](/zh-CN/)
+* Translations
+    * [:us:English](/en/)
+    * [:cn:简体中文](/zh-cn/)
