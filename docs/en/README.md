@@ -166,24 +166,194 @@ All interfaces return data in JSON format.
 | 0    | Business success |
 | 1    | Business failure |
 
+
+Here's the translation of the document into English:
+
+---
+
 ### Message Code
 
-| msg          | Message Code                                |
-|--------------|---------------------------------------------|
+| msg          | message code                                 |
+|--------------|----------------------------------------------|
 | SUCCESS      | Success                                      |
 | FAILURE      | Failure                                      |
-| AUTH_001     | Missing request header validate-appkey       |
-| AUTH_002     | Missing request header validate-timestamp    |
-| AUTH_003     | Missing request header validate-recvwindow   |
-| AUTH_004     | Invalid request header validate-recvwindow   |
-| AUTH_005     | Missing request header validate-algorithms   |
-| AUTH_006     | Invalid request header validate-algorithms   |
-| AUTH_007     | Missing request header validate-signature    |
-| AUTH_101     | ApiKey does not exist                        |
-| AUTH_102     | ApiKey not activated                         |
-| AUTH_103     | Signature error                              |
-| AUTH_104     | Unbound IP request                           |
-| AUTH_105     | Message outdated                             |
-| AUTH_106     | Exceeds apikey permission                    |
-| SYMBOL_001   | Trading pair does not exist                  |
-| SYMBOL_002   | Trading
+| AUTH_001     | Missing request header `validate-appkey`     |
+| AUTH_002     | Missing request header `validate-timestamp`  |
+| AUTH_003     | Missing request header `validate-recvwindow` |
+| AUTH_004     | Invalid request header `validate-recvwindow` |
+| AUTH_005     | Missing request header `validate-algorithms` |
+| AUTH_006     | Invalid request header `validate-algorithms` |
+| AUTH_007     | Missing request header `validate-signature`  |
+| AUTH_101     | ApiKey does not exist                         |
+| AUTH_102     | ApiKey not activated                          |
+| AUTH_103     | Signature error                               |
+| AUTH_104     | Request from non-bound IP                     |
+| AUTH_105     | Request is outdated                           |
+| AUTH_106     | Exceeds ApiKey permissions                    |
+| SYMBOL_001   | Trading pair does not exist                   |
+| SYMBOL_002   | Trading pair not open                        |
+| SYMBOL_003   | Trading pair suspended                        |
+| SYMBOL_004   | This trading pair is not supported in your country |
+| SYMBOL_005   | The market does not support API trading       |
+| ORDER_001    | Platform rejected the order                   |
+| ORDER_002    | Insufficient funds                            |
+| ORDER_003    | Trading pair suspended                        |
+| ORDER_004    | Trading prohibited                             |
+| ORDER_005    | Order does not exist                          |
+| ORDER_006    | Too many unfilled orders                      |
+| ORDER_007    | Subaccount has no trading permissions          |
+| ORDER_008    | Current order price or quantity precision is abnormal |
+| ORDER_F0101  | Trigger price filter - minimum value         |
+| ORDER_F0102  | Trigger price filter - maximum value         |
+| ORDER_F0103  | Trigger price filter - step value            |
+| ORDER_F0201  | Trigger quantity filter - minimum value      |
+| ORDER_F0202  | Trigger quantity filter - maximum value      |
+| ORDER_F0203  | Trigger quantity filter - step value         |
+| ORDER_F0301  | Trigger amount filter - minimum value        |
+| ORDER_F0401  | Trigger open protection filter                |
+| ORDER_F0501  | Trigger limit protection filter - maximum deviation for buy orders |
+| ORDER_F0502  | Trigger limit protection filter - maximum deviation for sell orders |
+| ORDER_F0601  | Trigger market protection filter              |
+| COMMON_001   | User does not exist                           |
+| COMMON_002   | System busy, please try again later           |
+| COMMON_003   | Operation failed, please try again later      |
+| CURRENCY_001 | Currency information error                    |
+| DEPOSIT_001  | Deposits are not open yet                     |
+| DEPOSIT_002  | Current account security level is too low, please bind any two of phone/email/Google Authenticator before depositing |
+| DEPOSIT_003  | Address format is incorrect, please re-enter  |
+| DEPOSIT_004  | Address already exists, please re-enter       |
+| DEPOSIT_005  | Cold wallet address not found                 |
+| DEPOSIT_006  | No deposit address available, please try again later |
+| DEPOSIT_007  | Address generation in progress, please try again later |
+| DEPOSIT_008  | Deposits not supported                        |
+| WITHDRAW_001 | Withdrawals are not open yet                  |
+| WITHDRAW_002 | Withdrawal address is invalid                 |
+| WITHDRAW_003 | Current account security level is too low, please bind any two of phone/email/Google Authenticator before withdrawing |
+| WITHDRAW_004 | Withdrawal address not added                 |
+| WITHDRAW_005 | Withdrawal address cannot be empty            |
+| WITHDRAW_006 | Memo cannot be empty                          |
+| WITHDRAW_008 | Risk control triggered, withdrawal of this coin is not supported |
+| WITHDRAW_009 | Withdrawal failed, part of the assets in this withdrawal is subject to T+1 withdrawal restrictions |
+| WITHDRAW_010 | Withdrawal precision is invalid               |
+| WITHDRAW_011 | Insufficient available balance                |
+| WITHDRAW_012 | Withdrawal failed, insufficient remaining withdrawal quota for today |
+| WITHDRAW_013 | Withdrawal failed, insufficient remaining withdrawal quota for today. You can increase the quota by completing higher-level real-name verification |
+| WITHDRAW_014 | This withdrawal address cannot use internal transfer function, please cancel internal transfer function and resubmit |
+| WITHDRAW_015 | Withdrawal amount is not sufficient to cover fees |
+| WITHDRAW_016 | Withdrawal address already exists             |
+| WITHDRAW_017 | This withdrawal has been processed and cannot be canceled |
+| WITHDRAW_018 | Memo must be numeric                          |
+| WITHDRAW_019 | Incorrect Memo, please re-enter              |
+| WITHDRAW_020 | Your withdrawal limit for today has been reached, please try again tomorrow |
+| WITHDRAW_021 | Your withdrawal limit for today has been reached, the maximum you can withdraw this time is {0} |
+| WITHDRAW_022 | Withdrawal amount must be greater than {0}    |
+| WITHDRAW_023 | Withdrawal amount must be less than {0}       |
+| WITHDRAW_024 | Withdrawals not supported                     |
+| WITHDRAW_025 | Please go to the deposit page to create a FIO address |
+| FUND_001     | Duplicate request (same bizId requested multiple times) |
+| FUND_002     | Insufficient balance                          |
+| FUND_003     | Transfer operation not supported (e.g., subaccounts do not support fund transfers) |
+| FUND_004     | Unfreezing failed                              |
+| FUND_005     | Transfer prohibited                            |
+| FUND_014     | Transfer from and to account ids cannot be the same |
+| FUND_015     | `from` and `to` business types cannot be the same (users cannot transfer between their own spot accounts) |
+| FUND_016     | Leverage trading pair cannot be empty          |
+| FUND_017     | Parameter error                                |
+| FUND_018     | Invalid freeze record                         |
+| FUND_019     | Unfreeze user mismatch                        |
+| FUND_020     | Unfreeze currency mismatch                    |
+| FUND_021     | Operation not supported                       |
+| FUND_022     | Freeze record amount exceeds the maximum length of 113 |
+| SYMBOL_001   | Trading pair does not exist                   |
+| TRANSFER_001 | Duplicate request (same bizId requested multiple times) |
+| TRANSFER_002 | Insufficient balance                          |
+| TRANSFER_003 | User not registered                           |
+| TRANSFER_004 | Currency transfer not allowed                 |
+| TRANSFER_005 | User's currency transfer not allowed          |
+| TRANSFER_006 | Transfer prohibited                            |
+| TRANSFER_007 | Request timeout                                |
+| TRANSFER_008 | Leverage transfer in error                     |
+| TRANSFER_009 | Leverage transfer out error                    |
+| TRANSFER_010 | Leverage clearing out transfer prohibited      |
+| TRANSFER_011 | Leverage with borrowing, transfer out prohibited |
+| TRANSFER_012 | Currency transfer prohibited                  |
+| GATEWAY_0001 | Risk control triggered                         |
+| GATEWAY_0002 | Risk control triggered                         |
+| GATEWAY_0003 | Risk control triggered                         |
+| GATEWAY_0004 | Risk control triggered                         |
+
+## Common Modules
+
+### Order Status Codes
+
+| State            | Description                        |
+|------------------|------------------------------------|
+| NEW              | New                                |
+| PARTIALLY_FILLED | Partially filled                   |
+| FILLED           | Fully filled                       |
+| CANCELED         | User canceled                      |
+| REJECTED         | Order failed                       |
+| EXPIRED          | Expired (time_in_force or premium expired) |
+
+### Order Types
+
+| Type   | Description |
+|--------|-------------|
+| LIMIT  | Limit order |
+| MARKET | Market order |
+
+### Trading Pair Status
+
+| State    | Description |
+|----------|-------------|
+| ONLINE   | Online      |
+| OFFLINE  | Offline     |
+| DELISTED | Delisted    |
+
+### Time-in-Force Options
+
+Defines how long an order remains valid.
+
+| TimeInForces | Description                         |
+|--------------|-------------------------------------|
+| GTC          | Good 'Til Canceled, valid until filled |
+| IOC          | Immediate Or Cancel, cancel unfilled part |
+| FOK          | Fill Or Kill, cancel if not all filled |
+| GTX          | Good 'Til X, cancel if not a maker order |
+
+### Deposit/Withdrawal Record Status Codes
+
+| Status        | Description                                  |
+|---------------|----------------------------------------------|
+| SUBMIT        | Withdrawal: Not frozen                      |
+| REVIEW        | Withdrawal: Frozen, pending review          |
+| AUDITED       | Withdrawal: Reviewed, sent to wallet, pending chain |
+| AUDITED_AGAIN | Under re-review                             |
+| PENDING       | Deposit/Withdrawal: On chain                |
+| SUCCESS       | Completed                                   |
+| FAIL          | Failed                                      |
+| CANCEL        | Canceled                                     |
+
+### BizType
+
+| Status    | Description |
+|-----------|-------------|
+| SPOT      | Spot        |
+| FINANCE   | Finance     |
+| FUTURES_U | Futures (U-margined) |
+| UB_CARD   | UB Card Account |
+
+### Buy/Sell Direction
+
+| Status | Description |
+|--------|-------------|
+| BUY    | Buy         |
+| SELL   | Sell        |
+
+## FAQ
+
+Here's the translation of the FAQ entry:
+
+---
+
+1. **AUTH_105**: When the server validates the request header parameters `validate-timestamp` (validTimeStamp) and `validate-recvwindow` (recvwindow), the following rule must be met: `dealTimeStamp` (the server time when the request is processed, in milliseconds) - `validTimeStamp` must be less than `recvwindow`. Otherwise, AUTH_105 will be returned. To avoid this error, it is recommended to set `validate-timestamp` to the time when the request is sent, in milliseconds, and to set `validate-recvwindow` to a larger value.
