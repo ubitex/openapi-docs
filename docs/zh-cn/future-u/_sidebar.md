@@ -1,6 +1,6 @@
 <!-- docs/_sidebar -->
 
-* [市场行情]()
+* 市场行情
     * [获取所有交易对](/zh-cn/future-u/market/symbol_all)
     * [获取交易对币种](/zh-cn/future-u/market/symbol_coins)
     * [获取币种详情](/zh-cn/future-u/market/symbol_coin_detail)

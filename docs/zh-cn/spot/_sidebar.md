@@ -1,6 +1,6 @@
 <!-- docs/_sidebar -->
 
-* [市场行情]()
+* 市场行情
     * [获取服务器时间](/zh-cn/spot/market/public_time)
     * [获取交易对信息](/zh-cn/spot/market/public_symbol)
     * [获取深度数据](/zh-cn/spot/market/public_depth)
@@ -12,7 +12,7 @@
     * [获取最优挂单ticker](/zh-cn/spot/market/public_ticker_books)
     * [获取24h统计ticker](/zh-cn/spot/market/public_ticker_24h)
 
-* [订单]()
+* 订单
     * [单笔下单](/zh-cn/spot/order/order_create)
     * [单笔撤单](/zh-cn/spot/order/order_delete)
     * [单笔查询](/zh-cn/spot/order/order_get)
@@ -28,13 +28,13 @@
     * [历史成交查询](/zh-cn/spot/trade/trade)
 
 
-* [资产]()
+* 资产
     * [获取币种信息](/zh-cn/spot/asset/public_currencies)
     * [获取单个资产](/zh-cn/spot/asset/balance)
     * [获取币种资产列表](/zh-cn/spot/asset/balances)
 
 
-* [充值/提现]()
+* 充值/提现
     * [获取可充提的币种](/zh-cn/spot/wallet/support_currency)
     * [获取币种关联转账网络信息](/zh-cn/spot/asset/public_currencies)
     * [提现](/zh-cn/spot/wallet/withdraw)
