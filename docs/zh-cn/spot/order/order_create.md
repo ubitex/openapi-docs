@@ -4,17 +4,17 @@
 
 ## 请求参数
 
-| 名称            | 类型     | 必选    | 约束   | 中文名 | 说明                                |
-|---------------|--------|-------|------|-----|-----------------------------------|
-| symbol        | string | true  | none |     | 交易对                               |
-| clientOrderId | string | false | none |     | 客户端ID(最长32位)                      |
-| side          | string | true  | none |     | 买卖方向,[枚举](/zh-cn/README?id=买卖方向)      |
-| type          | string | true  | none |     | 订单类型,[枚举](/zh-cn/README?id=订单类型)   |
-| timeInForce   | string | true  | none |     | 有效方式,[枚举](/zh-cn/README.md?id=BizType) |
-| bizType       | string | true  | none |     | 业务类型,[枚举](/zh-cn/README.md?id=BizType) |
-| price         | number | false | none |     | 价格。现价必填; 市价不填                     |
-| quantity      | number | false | none |     | 数量。现价必填；市价按数量下单时必填                |
-| quoteQty      | number | false | none |     | 金额。现价不填；市价按金额下单时必填                |
+| 名称            | 位置   | 类型     | 必选    | 说明                                     |
+|---------------|------|--------|-------|----------------------------------------|
+| symbol        | body | string | true  | 交易对                                    |
+| clientOrderId | body | string | false | 客户端ID(最长32位)                           |
+| side          | body | string | true  | 买卖方向,[枚举](/zh-cn/README?id=买卖方向)       |
+| type          | body | string | true  | 订单类型,[枚举](/zh-cn/README?id=订单类型)       |
+| timeInForce   | body | string | true  | 有效方式,[枚举](/zh-cn/README.md?id=BizType) |
+| bizType       | body | string | true  | 业务类型,[枚举](/zh-cn/README.md?id=BizType) |
+| price         | body | number | false | 价格。现价必填; 市价不填                          |
+| quantity      | body | number | false | 数量。现价必填；市价按数量下单时必填                     |
+| quoteQty      | body | number | false | 金额。现价不填；市价按金额下单时必填                     |
 
 > 请求示例
 
