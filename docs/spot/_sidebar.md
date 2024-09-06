@@ -26,7 +26,7 @@
     * [历史订单查询](/spot/order/history-order)
 
 
-* [成交]()
+* 成交
     * [历史成交查询](/spot/trade/trade)
 
 
@@ -44,5 +44,18 @@
     * [获取充值地址](/spot/wallet/deposit_address)
     * [充值历史](/spot/wallet/deposit_history)
 
-* [划转]()
-  * [划转](/spot/transfer/balance_transfer)
+* 划转
+  * [资产划转](/spot/transfer/balance_transfer)
+
+
+
+
+
+
+
+
+
+
+
+
+&nbsp;
