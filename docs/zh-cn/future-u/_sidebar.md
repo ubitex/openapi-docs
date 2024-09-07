@@ -66,9 +66,9 @@
     * [获取持仓信息](/zh-cn/future-u/position/position-list.md)
     * [一键平仓](/zh-cn/future-u/position/position-close-all.md)
     * [获取爆仓信息](/zh-cn/future-u/position/position-break-list.md)
-    * [修改持仓模式TODO](/zh-cn/future-u/position/position-change-type.md)
-    * [修改保证金TODO](/zh-cn/future-u/position/position-margin.md)
-    * [调整杠杠倍数TODO](/zh-cn/future-u/position/position-adjust-leverage.md)
+    * [修改持仓模式](/zh-cn/future-u/position/position-change-type.md)
+    * [修改保证金](/zh-cn/future-u/position/position-margin.md)
+    * [调整杠杠倍数](/zh-cn/future-u/position/position-adjust-leverage.md)
     * [获取ADL信息](/zh-cn/future-u/position/position-adl.md)
 
 * 资产/流水

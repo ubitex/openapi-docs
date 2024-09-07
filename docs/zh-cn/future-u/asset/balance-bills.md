@@ -11,48 +11,10 @@
 | direction | query | string  | 是   | 方向（PREV:上一页；NEXT:下一页）                             |
 | limit     | query | integer | 是   | 条数                                                         |
 | coin      | query | string  | 否   | 币种                                                         |
-| type      | query | string  | 否   | EXCHANGE:划转;CLOSE_POSITION:平仓盈亏;TAKE_OVER:仓位接管;QIANG_PING_MANAGER:强平清算费（手续费）;FUND:资金费用;FEE:手续费 (开仓、平仓、强平);ADL:自动减仓MERGE:仓位合并 |
+| type      | query | string  | 否   | EXCHANGE:划转;CLOSE_POSITION:平仓盈亏;TAKE_OVER:仓位接管;QIANG_PING_MANAGER:强平管理费（手续费）;FUND:资金费用;FEE:手续费 (开仓、平仓、强平);ADL:自动减仓;TAKE_OVER:仓位接管MERGE:仓位合并 |
 | startTime | query | integer | 否   | 起始时间                                                     |
 | endTime   | query | integer | 否   | 结束时间                                                     |
 
-> type
-```
-EXCHANGE:划转;
-CLOSE_POSITION:平仓盈亏;
-TAKE_OVER:仓位接管;
-QIANG_PING_MANAGER:强平清算费（手续费）;
-FUND:资金费用;
-FEE:手续费 (开仓、平仓、强平);
-ADL:自动减仓
-MERGE:仓位合并
-EXCHANGE :EXCHANGE
-CLOSE_POSITION :CLOSE_POSITION
-TAKE_OVER :TAKE_OVER
-QIANG_PING_MANAGER :QIANG_PING_MANAGER
-FUND :FUND
-FEE :FEE
-ADL :ADL
-FICTITIOUS :FICTITIOUS
-MERGE :MERGE
-SYSTEM_CLOSE_POSITION :SYSTEM_CLOSE_POSITION
-CASH_BACK :CASH_BACK
-DELIVERY_FEE :DELIVERY_FEE
-SYSTEM_ADD :SYSTEM_ADD
-BONUS_GRANT :BONUS_GRANT
-BONUS_TAKE_BACK :BONUS_TAKE_BACK
-BONUS_DEDUCTION :BONUS_DEDUCTION
-LARGE_ACCOUNT_BONUS_GRANT :LARGE_ACCOUNT_BONUS_GRANT
-LARGE_ACCOUNT_BONUS_TAKE_BACK :LARGE_ACCOUNT_BONUS_TAKE_BACK
-BONUS_GRANT_AND_TAKE_BACK :BONUS_GRANT_AND_TAKE_BACK
-BONUS_COUPON_GRANT :BONUS_COUPON_GRANT
-BONUS_COUPON_RECOVERY :BONUS_COUPON_RECOVERY
-BONUS_COUPON_PROFIT :BONUS_COUPON_PROFIT
-AFFILIATE_KICKBACK :AFFILIATE_KICKBACK
-COPY_TRADE_LEADER_PROFIT :COPY_TRADE_LEADER_PROFIT
-COPY_TRADE_FOLLOWER_PROFIT :COPY_TRADE_FOLLOWER_PROFIT
-COPY_TRADE_FOLLOWER_PROFIT_BACK :COPY_TRADE_FOLLOWER_PROFIT_BACK
-COPY_TRADE_PLATFORM_LEADER_PROFIT :COPY_TRADE_PLATFORM_LEADER_PROFIT
-```
 
 > 请求示例
 
