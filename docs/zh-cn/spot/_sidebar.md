@@ -1,6 +1,6 @@
 <!-- docs/_sidebar -->
 
-* [接入说明](/zh-cn/api-info)
+* [接入说明](/zh-cn/introduction)
 
 
 * 市场行情
