@@ -411,6 +411,5 @@ Defines how long an order remains valid
 
 ## Support
 
-Get support in our Telegram group: [UBitEx API Support Group](https://t.me/ubitex_api_support)  
-
+Get support in our Telegram group: [UBitEx API Support Group](https://t.me/ubitex_api_support)
 For inquiries, please consult our online customer service.
