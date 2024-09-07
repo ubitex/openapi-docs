@@ -1,6 +1,6 @@
 <!-- docs/-sidebar -->
 
-* [接入说明](/zh-cn/introduction)
+* [接入说明](/zh-cn/spot/README.md)
 
 * 市场行情
   * [获取服务器时间](/zh-cn/spot/market/public-time)

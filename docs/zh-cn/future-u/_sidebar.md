@@ -1,6 +1,6 @@
 <!-- docs/_sidebar -->
 
-* [接入说明](/zh-cn/README)
+* [接入说明](/zh-cn/future-u/README)
 
 * 市场行情
   * [获取所有交易对](/zh-cn/future-u/market/symbol-all)
