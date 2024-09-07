@@ -1,4 +1,4 @@
-获取币种信息
+# 获取币种信息
 
 `GET` /v1/spot/public/currencies
 

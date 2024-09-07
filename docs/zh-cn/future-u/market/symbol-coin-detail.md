@@ -1,4 +1,4 @@
-获取币种详情
+# 获取币种详情
 
 `GET` /v1/future-u/market/public/symbol/coin/detail
 

@@ -1,4 +1,4 @@
-获取全交易对的聚合行情信息
+# 获取全交易对的聚合行情信息
 
 `GET` v1/future-u/market/public/q/agg-tickers
 

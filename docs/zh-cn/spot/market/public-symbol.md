@@ -1,4 +1,4 @@
-获取交易对信息
+# 获取交易对信息
 
 `GET` /v1/spot/public/symbol
 

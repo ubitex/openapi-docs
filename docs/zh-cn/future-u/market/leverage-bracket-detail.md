@@ -1,4 +1,4 @@
-查询单个交易对杠杆分层
+# 查询单个交易对杠杆分层
 
 `GET` /v1/future-u/market/public/leverage/bracket/detail
 

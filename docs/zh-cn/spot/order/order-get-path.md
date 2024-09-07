@@ -1,4 +1,4 @@
-单笔获取
+# 单笔获取
 
 `GET` /v1/spot/order/{orderId}
 

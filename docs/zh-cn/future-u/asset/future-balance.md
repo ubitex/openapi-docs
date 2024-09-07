@@ -1,4 +1,4 @@
-获取合约账户资产
+# 获取合约账户资产
 
 `GET` /v1/future-u/user/compat/balance/list
 

@@ -1,4 +1,4 @@
-完整ticker
+# 完整ticker
 
 `GET` /v1/spot/public/ticker
 

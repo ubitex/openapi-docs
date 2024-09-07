@@ -1,4 +1,4 @@
-获取服务器信息
+# 获取服务器信息
 
 `GET` /v1/spot/public/time
 

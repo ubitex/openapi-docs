@@ -1,4 +1,4 @@
-获取指定交易对的买一卖一行情信息
+# 获取指定交易对的买一卖一行情信息
 
 `GET` /v1/future-u/market/public/q/ticker/book
 

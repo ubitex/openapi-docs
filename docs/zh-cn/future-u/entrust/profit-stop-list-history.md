@@ -1,4 +1,4 @@
-查询历史止盈止损委托
+# 查询历史止盈止损委托
 
 `GET` /trade/entrust/profit-list-history
 

@@ -1,4 +1,4 @@
-查询历史计划委托
+# 查询历史计划委托
 
 `GET` /v1/future-u/trade/entrust/plan-list-history
 

@@ -1,4 +1,4 @@
-获取深度数据
+# 获取深度数据
 
 `GET` /v1/spot/public/depth
 

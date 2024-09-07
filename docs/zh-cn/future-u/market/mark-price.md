@@ -1,4 +1,4 @@
-获取所有交易对的标记价格
+# 获取所有交易对的标记价格
 
 `GET` /v1/future-u/market/public/q/mark-price
 

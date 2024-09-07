@@ -1,4 +1,4 @@
-获取所有交易对的配置信息
+# 获取所有交易对的配置信息
 
 `GET` /v1/future-u/market/public/symbol/list
 

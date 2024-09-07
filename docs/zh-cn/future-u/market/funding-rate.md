@@ -1,4 +1,4 @@
-获取资金费率
+# 获取资金费率
 
 `GET` /v1/future-u/market/public/q/funding-rate
 

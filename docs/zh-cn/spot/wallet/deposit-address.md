@@ -1,4 +1,4 @@
-获取充值地址
+# 获取充值地址
 
 `GET` /v1/spot/deposit/address
 

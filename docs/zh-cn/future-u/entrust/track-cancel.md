@@ -1,4 +1,4 @@
-撤销跟踪委托
+# 撤销跟踪委托
 
 `DELETE` /trade/v2/entrust/cancel-track
 

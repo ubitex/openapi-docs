@@ -1,4 +1,4 @@
-获取币种关联转账网络信息
+# 获取币种关联转账网络信息
 
 `GET` /v1/spot/public/currency/{currencyId}
 

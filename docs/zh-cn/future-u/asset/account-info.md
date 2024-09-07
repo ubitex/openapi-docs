@@ -1,4 +1,4 @@
-获取账户相关信息
+# 获取账户相关信息
 
 `GET` /v1/future-u/user/account/info
 

@@ -1,4 +1,4 @@
-获取交易对风险基金余额
+# 获取交易对风险基金余额
 
 `GET` /v1/future-u/market/public/contract/risk-balance
 

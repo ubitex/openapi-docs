@@ -1,4 +1,4 @@
-获取单个资产
+# 获取单个资产
 
 `GET` /v1/spot/balance
 

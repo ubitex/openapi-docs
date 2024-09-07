@@ -1,4 +1,4 @@
-获取交易对的深度信息
+# 获取交易对的深度信息
 
 `GET` /v1/future-u/market/public/q/depth
 

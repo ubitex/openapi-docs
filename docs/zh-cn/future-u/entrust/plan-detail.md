@@ -1,4 +1,4 @@
-根据entrustId查询计划委托
+# 根据entrustId查询计划委托
 
 `GET` /v1/future-u/trade/entrust/plan-detail
 

@@ -1,4 +1,4 @@
-获取用户单币种资金
+# 获取用户单币种资金
 
 `GET` /v1/future-u/user/balance/detail
 

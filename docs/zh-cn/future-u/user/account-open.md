@@ -1,4 +1,4 @@
-开通合约
+# 开通合约
 
 `POST` /v1/future-u/user/account/open
 

@@ -1,4 +1,4 @@
-获取可充提的币种
+# 获取可充提的币种
 
 `GET` /v1/spot/public/wallet/support/currency
 

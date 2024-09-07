@@ -1,4 +1,4 @@
-获取所有交易对的指数价格
+# 获取所有交易对的指数价格
 
 `GET` /v1/future-u/market/public/q/index-price
 

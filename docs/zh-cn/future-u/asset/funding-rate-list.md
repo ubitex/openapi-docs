@@ -1,4 +1,4 @@
-获取资金费用
+# 获取资金费用
 
 `GET` /v1/future-u/user/balance/funding-rate-list
 

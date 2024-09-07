@@ -1,4 +1,4 @@
-根据profitId查询止盈止损
+# 根据profitId查询止盈止损
 
 `GET` /trade/entrust/profit-detail
 

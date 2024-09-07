@@ -1,4 +1,4 @@
-查询历史成交列表
+# 查询历史成交列表
 
 `GET` /v1/spot/public/trade/history
 

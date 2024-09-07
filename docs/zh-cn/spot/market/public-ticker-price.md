@@ -1,4 +1,4 @@
-获取最新价格ticker
+# 获取最新价格ticker
 
 `GET` /v1/spot/public/ticker/price
 

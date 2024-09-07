@@ -1,4 +1,4 @@
-获取24h统计ticker
+# 获取24h统计ticker
 
 `GET` /v1/spot/public/ticker/24h
 

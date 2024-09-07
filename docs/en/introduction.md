@@ -1,5 +1,3 @@
-##
-
 # REST API
 
 > `Domain`: `http://api.ubit.site`

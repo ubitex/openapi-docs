@@ -1,4 +1,4 @@
-获取交易对的最新成交信息
+# 获取交易对的最新成交信息
 
 `GET` /v1/future-u/market/public/q/deal
 

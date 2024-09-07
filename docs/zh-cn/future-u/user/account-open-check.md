@@ -1,4 +1,4 @@
-是否已经开通合约
+# 是否已经开通合约
 
 `GET` /v1/future-u/user/compat/account/open
 

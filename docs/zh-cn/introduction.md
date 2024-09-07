@@ -1,5 +1,3 @@
-#
-
 # REST API
 
 > `域名`:  `http://api.ubit.site `

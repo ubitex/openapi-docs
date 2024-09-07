@@ -1,4 +1,4 @@
-获取最优挂单ticker
+# 获取最优挂单ticker
 
 `GET` /v1/spot/public/ticker/book
 

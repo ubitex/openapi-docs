@@ -1,4 +1,4 @@
-获取用户资金
+# 获取用户资金
 
 `GET` /v1/future-u/user/balance/list
 

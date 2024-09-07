@@ -1,4 +1,4 @@
-成交查询
+# 成交查询
 
 `GET` /v1/spot/trade
 

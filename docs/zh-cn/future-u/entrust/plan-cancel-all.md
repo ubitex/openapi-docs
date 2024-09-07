@@ -1,4 +1,4 @@
-撤销计划委托
+# 撤销计划委托
 
 `DELETE` /trade/v2/entrust/cancel-all-plan
 
