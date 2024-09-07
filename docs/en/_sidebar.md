@@ -1,5 +1,5 @@
 <!-- docs/_sidebar.md -->
 
-* [Overview](/en/overview.md)
-* [Access Description](/en/README.md)
+* [Induction](/en/README.md)
+* [Access Description](/en/api-info.md)
 

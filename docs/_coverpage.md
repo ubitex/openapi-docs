@@ -26,4 +26,4 @@
 
 
 [GitHub](https://github.com/ubitex/api-ubitex.com)
-[Get Started](/README.md)
+[Get Started](/zh-cn/README)

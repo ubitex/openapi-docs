@@ -1,5 +1,5 @@
 <!-- docs/_sidebar.md -->
 
-* [概述](/overview.md)
-* [接入说明](/README.md)
+* [入门](/zh-cn/README.md)
+* [接入说明](/zh-cn/api-info.md)
 

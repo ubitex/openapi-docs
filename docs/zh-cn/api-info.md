@@ -2,6 +2,8 @@
 
 > `域名`:  `http://api.ubit.site `
 
+----
+
 ## 接口基本信息
 
 鉴于延迟高和稳定性差等原因，不建议通过代理的方式访问API。
@@ -11,6 +13,8 @@ GET请求参数放入query Params中，POST请求参数放入request body中
 请求头信息请设置为：`Content-Type=application/json`
 
 对于/public以外开头的请求，需要对请求报文进行签名
+
+----
 
 ## 限频规则
 
@@ -23,6 +27,8 @@ GET请求参数放入query Params中，POST请求参数放入request body中
 IP限流示例说明：`100/s/ip`，表示每个IP每秒该接口请求次数限制。
 
 apiKey限流示例说明：`50/s/apiKey`，表示每个apiKey每秒该接口请求次数限制。
+
+----
 
 ## 签名说明
 
@@ -128,7 +134,6 @@ symbol=btc_usdt&side=BUY&type=LIMIT
 
 上述拼接值记作body
 
-
 整个数据最且拼接值由#符号分别与method、path、query、body进行拼接成#method、#path、#query、#body，
 最终拼接值记作为Y=#method#path#query#body。 注意:
 
@@ -194,6 +199,7 @@ curl --location --request POST 'https://api.ubit.site/v1/spot/order' \
   "msgInfo": []
 }
 ```
+----
 
 ## 响应代码
 
@@ -326,6 +332,8 @@ curl --location --request POST 'https://api.ubit.site/v1/spot/order' \
 | GATEWAY_0003 | 触发风控                                        |
 | GATEWAY_0004 | 触发风控                                        |
 
+----
+
 ## 公共模块
 
 ### 订单状态码
@@ -394,9 +402,48 @@ curl --location --request POST 'https://api.ubit.site/v1/spot/order' \
 | BUY    | 买           |
 | SELL   | 卖           |
 
+----
+
 ## FAQ
 
-1. AUTH_105：服务器在校验请求头参数validate-timestamp(validTimeStamp)、validate-recvwindow（recvwindow）时，
-   需要符合以下规则：dealTimeStamp（请求被处理时服务器时间,单位毫秒）- validTimeStamp < recvwindow
-   ，否则就会返回AUTH_105，为了避免此错误，建议validate-timestamp 设置为请求发出的时间，以毫秒为单位，validate-recvwindow设置的大一点
+1. **为什么在多次成功请求后，后续请求返回500个错误码?**
 
+    这种情况可能是由于服务器不稳定造成的。我们建议您稍后再发送请求。如果问题仍然存在，请联系技术支持。
+
+2. **为什么我遇到“无效签名”错误?**
+
+    此错误通常由不正确的签名引起。确保连接顺序和散列方法是准确的。如需进一步帮助，请参阅文档了解详细信息。
+
+3. **为什么我得到“缺少请求头验证-appkey”错误?**
+
+    这意味着您的请求缺少' validate-appkey '标头。请确保您的请求中包含所有必需的标题。
+
+4. **为什么429状态码请求失败?**
+
+    429状态码表示已超过请求速率限制。请减少你的请求频率。
+
+5. **如何避免利率限制?**
+
+    遵循API文档中指定的速率限制。如果需要扩展请求量，请考虑使用多个apikey。
+
+6. **可以修改签名算法吗?**
+
+    目前支持的算法有:HmacMD5、HmacSHA1、HmacSHA224、HmacSHA256、HmacSHA384和HmacSHA512。建议使用HmacSHA256协议。
+
+7. **为什么请求失败，提示“服务不可用”错误?**
+
+    此错误表明该服务当前不可用。请稍后再试。
+
+8. **如果我遇到“服务错误”的回应，我应该怎么做?**
+
+    这通常表明服务器端存在问题。如果错误仍然存在，请联系支持以获得进一步帮助。
+
+9. **AUTH_105：报文过时**
+
+    服务器在校验请求头参数validate-timestamp(validTimeStamp)、validate-recvwindow（recvwindow）时，需要符合以下规则：dealTimeStamp（请求被处理时服务器时间,单位毫秒）- validTimeStamp < recvwindow ，否则就会返回AUTH_105，为了避免此错误，建议validate-timestamp 设置为请求发出的时间，以毫秒为单位，validate-recvwindow设置的大一点
+
+## 技术支持
+
+在我们的电报组中获取支持:  [UBitEx API Support Group](https://t.me/ubitex_api_support)
+
+如有疑问请咨询在线客服
