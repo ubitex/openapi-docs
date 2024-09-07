@@ -1,14 +1,12 @@
-Sure! Here's the English translation of the API documentation:
+# 
 
----
-
-## REST API
+# REST API
 
 > `Domain`: `http://api.ubit.site`
 
 ----
 
-## Basic Information
+# Basic Information
 
 Due to high latency and poor stability, accessing the API through a proxy is not recommended.
 
@@ -20,7 +18,7 @@ For requests other than those starting with `/public`, you need to sign the requ
 
 ----
 
-## Rate Limiting Rules
+# Rate Limiting Rules
 
 Some interfaces have rate limiting (details are specified under each interface). Rate limiting primarily consists of gateway rate limiting and WAF rate limiting.
 
@@ -34,7 +32,7 @@ apiKey rate limiting example: `50/s/apiKey`, meaning each apiKey is limited to a
 
 ----
 
-## Signature Explanation
+# Signature Explanation
 
 To ensure data security for UbitEx's open APIs, including protection against data tampering, data expiration, data replay, and access frequency issues, a request signature is required.
 
@@ -51,7 +49,7 @@ To ensure data security for UbitEx's open APIs, including protection against dat
 5. Add `algorithms` (signature method/algorithm), where the signature is based on hashing. The recommended algorithm is HmacSHA256. Supported algorithms include:
    `HmacMD5, HmacSHA1, HmacSHA224, HmacSHA256 (recommended), HmacSHA384, HmacSHA512`.
 
-### Signature Generation
+## Signature Generation
 
 For example, with `http://api.ubit.site/v1/spot`:
 Here’s how you can use `echo`, `openssl`, and `curl` in a Linux bash environment to call an API for placing an order:
@@ -69,13 +67,13 @@ Header Data:
 - `validate-timestamp`: 1717234493000
 - `validate-signature`: 1231312318f13dc27dbbd02c2cc51ff7059765ed12313131
 
-### Request Data
+## Request Data
 
 ```json
 {"symbol":"BTC_USDT","clientOrderId":"16559590087220001","side":"BUY","type":"LIMIT","timeInForce":"FOK","bizType":"SPOT","price":40000,"quantity":2}
 ```
 
-#### 1. Data Section
+### 1. Data Section
 
 - `method`: Request method in uppercase, e.g., GET, POST, DELETE, PUT
 - `path`: Concatenate all values in the path in order. For RESTful paths like `/test/{var1}/{var2}/`, concatenate the actual parameters. Example: `/sign/test/bb/aa`
@@ -106,13 +104,13 @@ Note:
 - If `query` has no data and `body` has data: `Y=#method#path#body`
 - If both `query` and `body` have data: `Y=#method#path#query#body`
 
-#### 2. Request Header Section
+### 2. Request Header Section
 
 Concatenate the keys in alphabetical order using `&`, as `X`. Example:
 
 > `validate-algorithms=HmacSHA256&validate-appkey=uasdfk-76d0-4f6e-a6b2-asdfdas&validate-recvwindow=5000&validate-timestamp=1641446237201`
 
-#### 3. Generate Signature
+### 3. Generate Signature
 
 Combine `X` and `Y` to get `original=XY`. Encrypt this string to get the signature.
 
@@ -122,7 +120,7 @@ String signature=org.apache.commons.codec.digest.HmacUtils.hmacSha256Hex(secretk
 
 Add the generated `signature` to the request header with `validate-signature` as the key.
 
-#### 4. Example
+### 4. Example
 
 - Signature raw message example:
 
@@ -148,7 +146,7 @@ curl --location --request POST 'https://api.ubit.site/v1/spot/order' \
     - Ensure correct `Content-Type` and parameter formats in the raw signature message and request message.
     - Java SDK: [http://git.ubit.site/backend/sdk-for-java.git](http://git.ubit.site/backend/sdk-for-java.git)
 
-## Response Format
+# Response Format
 
 All interfaces return data in JSON format.
 
@@ -163,9 +161,9 @@ All interfaces return data in JSON format.
 
 ----
 
-## Response Codes
+# Response Codes
 
-### HTTP Status
+## HTTP Status
 
 | httpStatus | Description                              |
 |:-----------|:-----------------------------------------|
@@ -176,7 +174,7 @@ All interfaces return data in JSON format.
 | 502        | Gateway exception                        |
 | 503        | Service unavailable, please try again later |
 
-### Result Code
+## Result Code
 
 | code | return Code |
 |------|-------------|
@@ -185,7 +183,7 @@ All interfaces return data in JSON format.
 
 Here is the English translation for the provided content:
 
-### Message Code
+## Message Code
 
 | msg          | message code                                |
 |--------------|---------------------------------------------|
@@ -298,9 +296,9 @@ Here is the English translation for the provided content:
 
 ----
 
-## Public Modules
+# Public Modules
 
-### Order Status Codes
+## Order Status Codes
 
 | State            | Description                  |
 |------------------|------------------------------|
@@ -311,14 +309,14 @@ Here is the English translation for the provided content:
 | REJECTED         | Order failed                 |
 | EXPIRED          | Expired (e.g., `time_in_force` cancellation or premium cancellation) |
 
-### Order Types
+## Order Types
 
 | Type   | Description |
 |--------|-------------|
 | LIMIT  | Limit order |
 | MARKET | Market order |
 
-### Trading Pair Status
+## Trading Pair Status
 
 | State    | Description |
 |----------|-------------|
@@ -326,7 +324,7 @@ Here is the English translation for the provided content:
 | OFFLINE  | Offline     |
 | DELISTED | Delisted    |
 
-### Validity Types
+## Validity Types
 
 Defines how long an order remains valid
 
@@ -337,7 +335,7 @@ Defines how long an order remains valid
 | FOK          | Fill or Kill, cancels if not fully filled  |
 | GTX          | Good 'Til Cancelled, cancels if not added as a pending order |
 
-### Deposit/Withdrawal Record Status Codes
+## Deposit/Withdrawal Record Status Codes
 
 | Status        | Description                             |
 |---------------|-----------------------------------------|
@@ -350,7 +348,7 @@ Defines how long an order remains valid
 | FAIL          | Failed                                   |
 | CANCEL        | Canceled                                 |
 
-### BizType
+## BizType
 
 | Status    | Description |
 |-----------|-------------|
@@ -359,7 +357,7 @@ Defines how long an order remains valid
 | FUTURES_U | Futures U-based |
 | UB_CARD   | UB Card account |
 
-### Buy/Sell Direction
+## Buy/Sell Direction
 
 | Status | Description |
 |--------|-------------|
@@ -368,7 +366,7 @@ Defines how long an order remains valid
 
 ----
 
-## FAQs
+# FAQs
 
 1. **Why is it that after multiple successful requests, subsequent requests are returned with 500 error codes?**
 
@@ -409,7 +407,7 @@ Defines how long an order remains valid
 
 ----
 
-## Support
+# Support
 
 Get support in our Telegram group: [UBitEx API Support Group](https://t.me/ubitex_api_support)
 For inquiries, please consult our online customer service.

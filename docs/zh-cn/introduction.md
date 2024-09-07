@@ -1,10 +1,12 @@
-## REST API
+# 
+
+# REST API
 
 > `域名`:  `http://api.ubit.site `
 
 ----
 
-## 接口基本信息
+# 接口基本信息
 
 鉴于延迟高和稳定性差等原因，不建议通过代理的方式访问API。
 
@@ -16,7 +18,7 @@ GET请求参数放入query Params中，POST请求参数放入request body中
 
 ----
 
-## 限频规则
+# 限频规则
 
 部分接口会有限流控制(对应接口下会有限流说明)，限流主要分为网关限流和WAF限流。
 
@@ -30,7 +32,7 @@ apiKey限流示例说明：`50/s/apiKey`，表示每个apiKey每秒该接口请�
 
 ----
 
-## 签名说明
+# 签名说明
 
 由于UbitEx需要为第三方平台提供一些开放性的接口，所以需要接口的数据安全问题，比如数据是否被篡改，数据是否已过时，数据是否可以重复提交，接口在某个时间内访问频率等问题。其中数据是否被篡改是最重要的。
 
@@ -51,7 +53,7 @@ apiKey限流示例说明：`50/s/apiKey`，表示每个apiKey每秒该接口请�
 5. 加入algorithms (签名方法/算法)，用户计算签名是基于哈希的协议，推荐使用HmacSHA256。具体支持那些协议，请参见下面列出:
    `HmacMD5、HmacSHA1、HmacSHA224、HmacSHA256(推荐)、HmacSHA384、HmacSHA512`
 
-### 签名生成
+## 签名生成
 
 以 http://api.ubit.site/v1/spot 为例  
 以下是在linux bash环境下使用 echo openssl 和curl工具实现的一个调用接口下单的示例
@@ -69,13 +71,13 @@ Header部分数据：
 - `validate-timestamp`: 1717234493000
 - `validate-signature`: 1231312318f13dc27dbbd02c2cc51ff7059765ed12313131
 
-### 请求数据
+## 请求数据
 
 ```json
 {"symbol":"BTC_USDT","clientOrderId":"16559590087220001","side":"BUY","type":"LIMIT","timeInForce":"FOK","bizType":"SPOT","price":40000,"quantity":2}
 ```
 
-#### 1. 数据部分
+### 1. 数据部分
 
 - `method`: 大写的请求方法，例如：GET、POST、DELETE、PUT
 
@@ -143,13 +145,13 @@ query无数据，body有数据：Y=#method#path#body
 
 query有数据，body有数据：Y=#method#path#query#body
 
-#### 2. 请求头部分
+### 2. 请求头部分
 
 将key按照字母自然升序后，使用&方式拼接在一起，作为X。如：
 
 > `validate-algorithms=HmacSHA256&validate-appkey=uasdfk-76d0-4f6e-a6b2-asdfdas&validate-recvwindow=5000&validate-timestamp=1641446237201`
 
-#### 3. 生成签名
+### 3. 生成签名
 
 最终把需要进行加密的字符串，记作为original=XY
 
@@ -161,7 +163,7 @@ String signature=org.apache.commons.codec.digest.HmacUtils.hmacSha256Hex(secretk
 
 将生成的签名singature放到请求头中，以validate-signature为Key，以singature为值。
 
-#### 4. 样例
+### 4. 样例
 
 - 签名原始报文样例：  
 
@@ -187,7 +189,7 @@ curl --location --request POST 'https://api.ubit.site/v1/spot/order' \
   注意检查 Content-Type、签名原始报文中的参数格式、请求报文中的参数格式  
   Java sdk: http://git.ubit.site/backend/sdk-for-java.git
 
-## 响应格式
+# 响应格式
 
 所有的接口返回都是JSON格式。
 
@@ -201,9 +203,9 @@ curl --location --request POST 'https://api.ubit.site/v1/spot/order' \
 ```
 ----
 
-## 响应代码
+# 响应代码
 
-### HTTP Status
+## HTTP Status
 
 | httpStatus | 描述                    |
 |:-----------|:----------------------|
@@ -214,14 +216,14 @@ curl --location --request POST 'https://api.ubit.site/v1/spot/order' \
 | 502        | 网关异常                  |
 | 503        | 服务不可用，请稍后重试           |
 
-### Result Code
+## Result Code
 
 | code | return Code |
 |------|-------------|
 | 0    | 业务成功        |
 | 1    | 业务失败        |
 
-### Message Code
+## Message Code
 
 | msg          | message code                                |
 |--------------|---------------------------------------------|
@@ -334,9 +336,9 @@ curl --location --request POST 'https://api.ubit.site/v1/spot/order' \
 
 ----
 
-## 公共模块
+# 公共模块
 
-### 订单状态码
+## 订单状态码
 
 | State            | 说明                       |
 |:-----------------|:-------------------------|
@@ -347,14 +349,14 @@ curl --location --request POST 'https://api.ubit.site/v1/spot/order' \
 | REJECTED         | 下单失败                     |
 | 内EXPIRED容        | 过期(time_in_force撤单或溢价撤单) |
 
-### 订单类型
+## 订单类型
 
 | Type   | 说明  |
 |--------|-----|
 | LIMIT  | 限价单 |
 | MARKET | 市价单 |
 
-### 交易对状态
+## 交易对状态
 
 | State    | 说明  |
 |----------|-----|
@@ -362,7 +364,7 @@ curl --location --request POST 'https://api.ubit.site/v1/spot/order' \
 | OFFLINE  | 下线的 |
 | DELISTED | 退市的 |
 
-### 有效方式
+## 有效方式
 
 这里定义了订单多久能够失效
 
@@ -373,7 +375,7 @@ curl --location --request POST 'https://api.ubit.site/v1/spot/order' \
 | FOK          | 无法全部立即成交就撤销      |
 | GTX          | 无法成为挂单方就撤销       |
 
-### 充值/提现记录状态码
+## 充值/提现记录状态码
 
 | Status        | 说明               |
 |:--------------|:-----------------|
@@ -386,7 +388,7 @@ curl --location --request POST 'https://api.ubit.site/v1/spot/order' \
 | FAIL          | 失败               |
 | CANCEL        | 已取消              |
 
-### BizType
+## BizType
 
 | Status    | Description |
 |:----------|:------------|
@@ -395,7 +397,7 @@ curl --location --request POST 'https://api.ubit.site/v1/spot/order' \
 | FUTURES_U | 合约u本位       |
 | UB_CARD   | UB卡账户       |
 
-### 买卖方向
+## 买卖方向
 
 | Status | Description |
 |:-------|:------------|
@@ -404,7 +406,7 @@ curl --location --request POST 'https://api.ubit.site/v1/spot/order' \
 
 ----
 
-## FAQ
+# FAQ
 
 1. **为什么在多次成功请求后，后续请求返回500个错误码?**
 
@@ -444,7 +446,7 @@ curl --location --request POST 'https://api.ubit.site/v1/spot/order' \
 
 ----
 
-## 技术支持
+# 技术支持
 
 在我们的电报组中获取支持:  [UBitEx API Support Group](https://t.me/ubitex_api_support)
 如有疑问请咨询在线客服
