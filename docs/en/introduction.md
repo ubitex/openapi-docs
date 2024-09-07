@@ -1,7 +1,5 @@
 ##
 
-# Access Description
-
 # REST API
 
 > `Domain`: `http://api.ubit.site`

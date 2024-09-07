@@ -2,9 +2,9 @@
 
 * [Index](/en/)
 
-* [Spot](/en/spot)
+* [Spot](/en/spot/)
 
-* [Future](/en/future)
+* [Future](/en/future-u/)
 
 * Translations
     * [:us:English](/en/)
