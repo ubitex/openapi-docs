@@ -7,7 +7,7 @@
 | 名称      | 位置    | 类型     | 必选 | 说明                      |
 |---------|-------|--------|----|-------------------------|
 | symbol  | query | string | 是  | 交易对，不传代表所有	             |
-| bizType | query | string | 是  | 业务类型 SPOT-现货, LEVER-杠杆	 |
+| bizType | query | string | 是  | 业务类型 SPOT-现货 |
 | side    | query | string | 是  | BUY-买,SELL-卖	           |
 | limit   | query | string | 是  | 条数                      |
 

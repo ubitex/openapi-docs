@@ -7,7 +7,7 @@
 | 名称      | 位置   | 类型     | 必选 | 说明                      |
 |---------|------|--------|----|-------------------------|
 | symbol  | body | string | 是  | 交易对，不传代表所有	             |
-| bizType | body | string | 是  | 业务类型 SPOT-现货, LEVER-杠杆	 |
+| bizType | body | string | 是  | 业务类型 SPOT-现货	 |
 | side    | body | string | 是  | BUY-买,SELL-卖	           |
 | mode    | body | string | 是  | 模式：CMD-命令式,ITERATOR-迭代式 |
 
