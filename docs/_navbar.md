@@ -2,9 +2,9 @@
 
 * [首页](/)
 
-* [现货](/zh-cn/spot/market/public-time)
+* [现货](/zh-cn/spot/)
 
-* [合约](/zh-cn/future-u/market/symbol-all)
+* [合约](/zh-cn/future-u/)
 
 * Translations
   * [:us:English](/en/)
