@@ -6,8 +6,8 @@
 
 | 名称            | 位置   | 类型           | 必选    | 说明                  |
 |---------------|------|--------------|-------|---------------------|
-| orderId       | body | integer¦null | false | 订单id，任意传其中一个        |
-| clientOrderId | body | string¦null  | false | client 订单id，任意传其中一个 |
+| orderId       | body | integer | false | 订单id，任意传其中一个        |
+| clientOrderId | body | string  | false | client 订单id，任意传其中一个 |
 
 > 请求示例
 
