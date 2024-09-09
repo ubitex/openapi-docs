@@ -55,8 +55,8 @@
   * [查询历史止盈止损委托](/zh-cn/future-u/entrust/profit-stop-list-history)
 
 * 持仓
-  * [获取持仓信息](/zh-cn/future-u/position/position-list)
   * [一键平仓](/zh-cn/future-u/position/position-close-all)
+  * [获取持仓信息](/zh-cn/future-u/position/position-list)
   * [获取爆仓信息](/zh-cn/future-u/position/position-break-list)
   * [修改持仓模式](/zh-cn/future-u/position/position-change-type)
   * [修改保证金](/zh-cn/future-u/position/position-margin)
