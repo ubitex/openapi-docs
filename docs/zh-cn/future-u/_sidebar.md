@@ -40,9 +40,9 @@
   * [查询成交明细](/zh-cn/future-u/trade/order-trade-list)
 
 * 计划委托与止盈止损
-  * [创建计划委托TODO](/zh-cn/future-u/entrust/plan-create)
-  * [撤销计划委托TODO](/zh-cn/future-u/entrust/plan-cancel)
-  * [撤销所有计划委托TODO](/zh-cn/future-u/entrust/plan-cancel-all)
+  * [创建计划委托](/zh-cn/future-u/entrust/plan-create)
+  * [撤销计划委托](/zh-cn/future-u/entrust/plan-cancel)
+  * [撤销所有计划委托](/zh-cn/future-u/entrust/plan-cancel-all)
   * [查询计划委托](/zh-cn/future-u/entrust/plan-list)
   * [根据entrustId查询计划委托](/zh-cn/future-u/entrust/plan-detail)
   * [查询历史计划委托](/zh-cn/future-u/entrust/plan-list-history)
