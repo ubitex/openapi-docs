@@ -1,6 +1,6 @@
 # 撤销计划委托
 
-`DELETE` /trade/v2/entrust/cancel-all-plan
+`DELETE` /v1/future-u/trade/v2/entrust/cancel-all-plan
 
 ## 请求参数
 

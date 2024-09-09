@@ -46,10 +46,10 @@
   * [查询计划委托](/zh-cn/future-u/entrust/plan-list)
   * [根据entrustId查询计划委托](/zh-cn/future-u/entrust/plan-detail)
   * [查询历史计划委托](/zh-cn/future-u/entrust/plan-list-history)
-  * [创建止盈止损TODO](/zh-cn/future-u/entrust/profit-stop-create)
-  * [修改止盈止损TODO](/zh-cn/future-u/entrust/profit-stop-update)
-  * [撤销止盈止损TODO](/zh-cn/future-u/entrust/profit-stop-cancel)
-  * [撤销所有止盈止损TODO](/zh-cn/future-u/entrust/profit-stop-cancel-all)
+  * [创建止盈止损](/zh-cn/future-u/entrust/profit-stop-create)
+  <!--* [修改止盈止损TODO](/zh-cn/future-u/entrust/profit-stop-update)-->
+  * [撤销止盈止损](/zh-cn/future-u/entrust/profit-stop-cancel)
+  * [撤销所有止盈止损](/zh-cn/future-u/entrust/profit-stop-cancel-all)
   * [查询止盈止损](/zh-cn/future-u/entrust/profit-stop-list)
   * [根据profitId查询止盈止损](/zh-cn/future-u/entrust/profit-stop-detail)
   * [查询历史止盈止损委托](/zh-cn/future-u/entrust/profit-stop-list-history)
@@ -61,7 +61,8 @@
   * [修改持仓模式](/zh-cn/future-u/position/position-change-type)
   * [修改保证金](/zh-cn/future-u/position/position-margin)
   * [调整杠杠倍数](/zh-cn/future-u/position/position-adjust-leverage)
-  * [获取ADL信息](/zh-cn/future-u/position/position-adl)
+
+  <!--* [获取ADL信息](/zh-cn/future-u/position/position-adl)-->
 
 * 资产/流水
   * [获取账户信息](/zh-cn/future-u/asset/account-info)
