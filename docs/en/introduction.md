@@ -106,7 +106,9 @@ Note:
 
 Concatenate the keys in alphabetical order using `&`, as `X`. Example:
 
-> `validate-algorithms=HmacSHA256&validate-appkey=uasdfk-76d0-4f6e-a6b2-asdfdas&validate-recvwindow=5000&validate-timestamp=1641446237201`
+```
+validate-algorithms=HmacSHA256&validate-appkey=2fa91add-388c-44f2-8365-f4b72886c135&validate-recvwindow=6000&validate-timestamp=1725455266041
+```
 
 ### 3. Generate Signature
 
@@ -122,8 +124,9 @@ Add the generated `signature` to the request header with `validate-signature` as
 
 - Signature raw message example:
 
-> `validate-algorithms=HmacSHA256&validate-appkey=2fa91add-388c-44f2-8365-f4b72886c135&validate-recvwindow=6000&validate-timestamp=1725455266041#POST#/v1/spot/order#{"symbol":"BTC_USDT","clientOrderId":"16559590087220001","side":"BUY","type":"LIMIT","timeInForce":"FOK","bizType":"SPOT","price":40000,"quantity":2,"media":"btok","mediaChannel":"12345"}`
-
+```
+validate-algorithms=HmacSHA256&validate-appkey=2fa91add-388c-44f2-8365-f4b72886c135&validate-recvwindow=6000&validate-timestamp=1725455266041#POST#/v1/spot/order#{"symbol":"BTC_USDT","clientOrderId":"16559590087220001","side":"BUY","type":"LIMIT","timeInForce":"FOK","bizType":"SPOT","price":40000,"quantity":2,"media":"btok","mediaChannel":"12345"}
+```
 - Request example:
 
 ```shell

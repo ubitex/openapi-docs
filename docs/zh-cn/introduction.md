@@ -53,7 +53,7 @@ apiKey限流示例说明：`50/s/apiKey`，表示每个apiKey每秒该接口请�
 5. 加入algorithms (签名方法/算法)，用户计算签名是基于哈希的协议，推荐使用HmacSHA256。具体支持那些协议，请参见下面列出:
    `HmacMD5、HmacSHA1、HmacSHA224、HmacSHA256(推荐)、HmacSHA384、HmacSHA512`
 
-### 签名生成
+## 签名生成
 
 以 http://api.ubit.site/v1/spot 为例  
 以下是在linux bash环境下使用 echo openssl 和curl工具实现的一个调用接口下单的示例
@@ -71,13 +71,13 @@ Header部分数据：
 - `validate-timestamp`: 1717234493000
 - `validate-signature`: 1231312318f13dc27dbbd02c2cc51ff7059765ed12313131
 
-### 请求数据
+## 请求数据
 
 ```json
 {"symbol":"BTC_USDT","clientOrderId":"16559590087220001","side":"BUY","type":"LIMIT","timeInForce":"FOK","bizType":"SPOT","price":40000,"quantity":2}
 ```
 
-##### 1. 数据部分
+### 1. 数据部分
 
 - `method`: 大写的请求方法，例如：GET、POST、DELETE、PUT
 
@@ -145,13 +145,15 @@ query无数据，body有数据：Y=##method##path##body
 
 query有数据，body有数据：Y=##method##path##query##body
 
-##### 2. 请求头部分
+### 2. 请求头部分
 
 将key按照字母自然升序后，使用&方式拼接在一起，作为X。如：
 
-> `validate-algorithms=HmacSHA256&validate-appkey=uasdfk-76d0-4f6e-a6b2-asdfdas&validate-recvwindow=5000&validate-timestamp=1641446237201`
+```
+validate-algorithms=HmacSHA256&validate-appkey=2fa91add-388c-44f2-8365-f4b72886c135&validate-recvwindow=6000&validate-timestamp=1725455266041
+```
 
-##### 3. 生成签名
+### 3. 生成签名
 
 最终把需要进行加密的字符串，记作为original=XY
 
@@ -163,11 +165,13 @@ String signature=org.apache.commons.codec.digest.HmacUtils.hmacSha256Hex(secretk
 
 将生成的签名singature放到请求头中，以validate-signature为Key，以singature为值。
 
-##### 4. 样例
+### 4. 样例
 
 - 签名原始报文样例：  
 
-> `validate-algorithms=HmacSHA256&validate-appkey=2fa91add-388c-44f2-8365-f4b72886c135&validate-recvwindow=6000&validate-timestamp=1725455266041##POST##/v1/spot/order##{"symbol":"BTC_USDT","clientOrderId":"16559590087220001","side":"BUY","type":"LIMIT","timeInForce":"FOK","bizType":"SPOT","price":40000,"quantity":2,"media":"btok","mediaChannel":"12345"}`
+```
+validate-algorithms=HmacSHA256&validate-appkey=2fa91add-388c-44f2-8365-f4b72886c135&validate-recvwindow=6000&validate-timestamp=1725455266041#POST#/v1/spot/order#{"symbol":"BTC_USDT","clientOrderId":"16559590087220001","side":"BUY","type":"LIMIT","timeInForce":"FOK","bizType":"SPOT","price":40000,"quantity":2,"media":"btok","mediaChannel":"12345"}
+```
 
 - 请求报文样例：
 
@@ -205,7 +209,7 @@ curl --location --request POST 'https://api.ubit.site/v1/spot/order' \
 
 # 响应代码
 
-### HTTP Status
+## HTTP Status
 
 | httpStatus | 描述                    |
 |:-----------|:----------------------|
@@ -216,14 +220,14 @@ curl --location --request POST 'https://api.ubit.site/v1/spot/order' \
 | 502        | 网关异常                  |
 | 503        | 服务不可用，请稍后重试           |
 
-### Result Code
+## Result Code
 
 | code | return Code |
 |------|-------------|
 | 0    | 业务成功        |
 | 1    | 业务失败        |
 
-### Message Code
+## Message Code
 
 | msg          | message code                                |
 |--------------|---------------------------------------------|
@@ -338,7 +342,7 @@ curl --location --request POST 'https://api.ubit.site/v1/spot/order' \
 
 # 公共模块
 
-### 订单状态码
+## 订单状态码
 
 | State            | 说明                       |
 |:-----------------|:-------------------------|
@@ -349,14 +353,14 @@ curl --location --request POST 'https://api.ubit.site/v1/spot/order' \
 | REJECTED         | 下单失败                     |
 | 内EXPIRED容        | 过期(time_in_force撤单或溢价撤单) |
 
-### 订单类型
+## 订单类型
 
 | Type   | 说明  |
 |--------|-----|
 | LIMIT  | 限价单 |
 | MARKET | 市价单 |
 
-### 交易对状态
+## 交易对状态
 
 | State    | 说明  |
 |----------|-----|
@@ -364,7 +368,7 @@ curl --location --request POST 'https://api.ubit.site/v1/spot/order' \
 | OFFLINE  | 下线的 |
 | DELISTED | 退市的 |
 
-### 有效方式
+## 有效方式
 
 这里定义了订单多久能够失效
 
@@ -375,7 +379,7 @@ curl --location --request POST 'https://api.ubit.site/v1/spot/order' \
 | FOK          | 无法全部立即成交就撤销      |
 | GTX          | 无法成为挂单方就撤销       |
 
-### 充值/提现记录状态码
+## 充值/提现记录状态码
 
 | Status        | 说明               |
 |:--------------|:-----------------|
@@ -388,7 +392,7 @@ curl --location --request POST 'https://api.ubit.site/v1/spot/order' \
 | FAIL          | 失败               |
 | CANCEL        | 已取消              |
 
-### BizType
+## BizType
 
 | Status    | Description |
 |:----------|:------------|
@@ -397,7 +401,7 @@ curl --location --request POST 'https://api.ubit.site/v1/spot/order' \
 | FUTURES_U | 合约u本位       |
 | UB_CARD   | UB卡账户       |
 
-### 买卖方向
+## 买卖方向
 
 | Status | Description |
 |:-------|:------------|
