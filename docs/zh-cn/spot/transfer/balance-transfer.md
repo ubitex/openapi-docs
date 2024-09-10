@@ -4,16 +4,16 @@
 
 ## 请求参数
 
-| 名称       | 位置   | 类型     | 必选    | 说明                                           |
-|----------|------|--------|-------|----------------------------------------------|
-| bizId    | body | string | true  | 唯一id 用作重复请求幂等	                               |
-| from     | body | string | true  | 划出业务账户 [bizType](/spot/README.md?id=BizType) |
-| to       | body | string | true  | 划入业务账户 [bizType](/spot/README.md?id=BizType)   |
-| currency | body | string | true  | 划转币种                                         |
-| symbol   | body | string | false | 划转交易对必须全部小写                                  |
-| amount   | body | number | true  | 划转的数量                                        |
-| remark   | body | string | false | 备注                                           |
-| toRemark | body | string | false | 备注                                           |
+| 名称       | 位置   | 类型     | 必选    | 说明                                     |
+|----------|------|--------|-------|----------------------------------------|
+| bizId    | body | string | true  | 唯一id 用作重复请求幂等	                         |
+| from     | body | string | true  | 划出业务账户 [bizType](../README?id=biztype) |
+| to       | body | string | true  | 划入业务账户 [bizType](../README?id=biztype) |
+| currency | body | string | true  | 划转币种                                   |
+| symbol   | body | string | false | 划转交易对必须全部小写                            |
+| amount   | body | number | true  | 划转的数量                                  |
+| remark   | body | string | false | 备注                                     |
+| toRemark | body | string | false | 备注                                     |
 
 > 请求示例
 
