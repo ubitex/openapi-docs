@@ -7,9 +7,9 @@
 | name      | location  | type    | required | Description                             |
 | --------- | ----- | ------- | ---- | -------------------------------- |
 | symbol    | query | string  | Yes   | symbol                           |
-| id        | query | integer | 否   | id                               |
-| direction | query | string  | 否   | Direction (PREV: previous page; NEXT: Next page) |
-| limit     | query | integer | 否   | Page Limit                             |
+| id        | query | integer | No   | id                               |
+| direction | query | string  | No   | Direction (PREV: previous page; NEXT: Next page) |
+| limit     | query | integer | No   | Page Limit                             |
 
 > Request Example
 
@@ -25,7 +25,7 @@ curl --location --request GET 'https://api.ubit.site/v1/future-u/market/public/q
 --header 'Connection: keep-alive'
 ```
 
-## Response result
+## Response Result
 
 ```json
 {

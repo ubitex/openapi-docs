@@ -25,7 +25,7 @@ curl --location --request POST 'https://api.ubit.site/v1/future-u/trade/v2/order
 --data-raw '{"orderIds":["402317447499403328"],"clientOrderIds":["23121"]}'
 ```
 
-## Response result
+## Response Result
 
 ```json
 {

@@ -7,12 +7,12 @@
 | --------- | ----- | ------- | ---- | ----------------------- |
 | currency  | query | string  | Yes   | coinname                |
 | chain     | query | string  | Yes   | 转账网络                |
-| status    | query | string  | 否   | 提币状态 SUBMIT :SUBMIT |
-| fromId    | query | integer | 否   | 上次开始的分页 Id       |
-| direction | query | string  | 否   | 分页方向 PREV :PREV     |
-| limit     | query | integer | 否   | 分页Page Limit                |
-| startTime | query | integer | 否   | 开始时间                |
-| endTime   | query | integer | 否   | End Time                |
+| status    | query | string  | No   | 提币状态 SUBMIT :SUBMIT |
+| fromId    | query | integer | No   | 上次开始的分页 Id       |
+| direction | query | string  | No   | 分页方向 PREV :PREV     |
+| limit     | query | integer | No   | 分页Page Limit                |
+| startTime | query | integer | No   | 开始时间                |
+| endTime   | query | integer | No   | End Time                |
 
 > Request Example
 
@@ -29,7 +29,7 @@ curl --location --request GET 'https://api.ubit.site/v1/spot/withdraw/history?cu
 --header 'Cookie: JSESSIONID=8FF5A9153450BDA558BF120CD75F0632'
 ```
 
-## Response result
+## Response Result
 
 ```json
 {

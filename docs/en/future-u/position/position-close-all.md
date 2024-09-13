@@ -23,7 +23,7 @@ curl --location --request POST 'https://api.ubit.site/v1/future-u/trade/position
 --header 'Connection: keep-alive'
 ```
 
-## Response result
+## Response Result
 
 ```json
 {

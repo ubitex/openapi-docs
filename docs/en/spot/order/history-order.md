@@ -32,7 +32,7 @@ curl --location --request GET 'https://api.ubit.site/v1/spot/history-order?symbo
 --header 'Connection: keep-alive' 
 ```
 
-## Response result
+## Response Result
 
 ```json
 {

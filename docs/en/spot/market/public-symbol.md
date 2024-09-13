@@ -7,9 +7,9 @@
 
 | name    | location  | type          | required | Description                                                        |
 | ------- | ----- | ------------- | ---- | ----------------------------------------------------------- |
-| symbol  | query | string        | 否   | symbol                                                      |
-| symbols | query | array[string] | 否   | symbol集合                                                  |
-| version | query | string        | 否   | 版本号,当请求版本号与响应内容版本一致时，不返回清单，减少IO |
+| symbol  | query | string        | No   | symbol                                                      |
+| symbols | query | array[string] | No   | symbol集合                                                  |
+| version | query | string        | No   | 版本号,当请求版本号与响应内容版本一致时，不返回清单，减少IO |
 
 > Request Example
 
@@ -26,7 +26,7 @@ curl --location --request GET 'https://api.ubit.site/v1/spot/public/symbol?symbo
 ```
 
 
-## Response result
+## Response Result
 
 ```json
 {

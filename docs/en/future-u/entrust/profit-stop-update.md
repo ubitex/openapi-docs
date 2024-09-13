@@ -27,7 +27,7 @@ curl --location --request DELETE 'https://api.ubit.site/v1/future-u/trade/v2/ent
 --data-raw '{"profitId":403374944700068900,"triggerPriceType":"INDEX_PRICE","triggerProfitPrice":56400,"triggerStopPrice":52100}'
 ```
 
-## Response result
+## Response Result
 
 ```json
 

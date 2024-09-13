@@ -20,7 +20,7 @@
 
 ```
 
-## Response result
+## Response Result
 
 ```json
 

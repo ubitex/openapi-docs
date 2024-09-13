@@ -28,7 +28,7 @@ curl --location --request POST 'https://api.ubit.site/v1/spot/withdraw' \
 --data-raw '{"chain":"Tron","currency":"usdt","amount":10,"address":"TKr47rQg831zd1UAY3u5K71fXuXMEowFXW"}'
 ```
 
-## Response result
+## Response Result
 
 ```json
 {

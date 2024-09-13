@@ -33,7 +33,7 @@ curl --location --request POST 'https://api.ubit.site/v1/future-u/trade/v2/entru
 --data-raw '{"symbol":"btc_usdt","price":"50000","stopPrice":"51000","orderSide":"BUY","entrustType":"TAKE_PROFIT","origQty":10,"positionSide":"LONG","timeInForce":"GTC","triggerPriceType":"INDEX_PRICE"}'
 ```
 
-## Response result
+## Response Result
 
 ```json
 {

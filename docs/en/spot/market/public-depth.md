@@ -6,8 +6,8 @@
 
 | name   | location  | type    | required | Description   |
 | ------ | ----- | ------- | ---- | ------ |
-| symbol | query | string  | 否   | symbol |
-| limit  | query | integer | 否   | 数量   |
+| symbol | query | string  | No   | symbol |
+| limit  | query | integer | No   | 数量   |
 
 > Request Example
 
@@ -23,7 +23,7 @@ curl --location --request GET 'https://api.ubit.site/v1/spot/public/depth?symbol
 --header 'Connection: keep-alive'
 ```
 
-## Response result
+## Response Result
 
 ```json
 {

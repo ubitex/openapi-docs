@@ -26,7 +26,7 @@ curl --location --request POST 'https://api.ubit.site/v1/future-u/trade/v2/order
 
 ```
 
-## Response result
+## Response Result
 
 ```json
 {

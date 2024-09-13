@@ -28,7 +28,7 @@ curl --location --request DELETE 'https://api.ubit.site/v1/spot/open-order' \
 --data-raw '{"symbol":"btc_usdt","side":"SELL","bizType":"SPOT","mode":"CMD"}'
 ```
 
-## Response result
+## Response Result
 
 ```json
 {

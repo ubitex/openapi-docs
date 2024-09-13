@@ -22,7 +22,7 @@ curl --location --request DELETE 'https://api.ubit.site/v1/spot/order/4016292677
 --header 'Connection: keep-alive'
 ```
 
-## Response result
+## Response Result
 
 ```json
 {

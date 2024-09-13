@@ -32,7 +32,7 @@ curl --location --request POST 'https://api.ubit.site/v1/spot/order' \
 --data-raw '{"symbol":"BTC_USDT","clientOrderId":"16559590087220001","side":"BUY","type":"LIMIT","timeInForce":"FOK","bizType":"SPOT","price":40000,"quantity":2,"media":"btok","mediaChannel":"12345"}'
 ```
 
-## Response result
+## Response Result
 
 ```json
 {

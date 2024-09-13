@@ -6,7 +6,7 @@
 
 | name   | location  | type   | required | Description                           |
 | ------ | ----- | ------ | ---- | ------------------------------ |
-| symbol | query | string | 否   | symbol（不传时撤销所有交易对） |
+| symbol | query | string | No   | symbol（不传时撤销所有交易对） |
 
 > Request Example
 
@@ -23,7 +23,7 @@ curl --location --request DELETE 'https://api.ubit.site/v1/future-u/trade/v2/ent
 
 ```
 
-## Response result
+## Response Result
 
 ```json
 {

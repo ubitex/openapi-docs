@@ -6,9 +6,9 @@
 
 | name    | location  | type          | required | Description                         |
 | ------- | ----- | ------------- | ---- | ---------------------------- |
-| symbol  | query | string        | 否   | symbol                       |
-| symbols | query | array[string] | 否   | symbol集合，不传时，返回全量 |
-| tags    | query | string        | 否   | 标签集合                     |
+| symbol  | query | string        | No   | symbol                       |
+| symbols | query | array[string] | No   | symbol集合，不传时，返回全量 |
+| tags    | query | string        | No   | 标签集合                     |
 
 
 > Request Example
@@ -25,7 +25,7 @@ curl --location --request GET 'https://api.ubit.site/v1/spot/public/ticker/price
 --header 'Connection: keep-alive' 
 ```
 
-## Response result
+## Response Result
 
 ```json
 {

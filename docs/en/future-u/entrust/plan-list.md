@@ -27,7 +27,7 @@ curl --location --request GET 'https://api.ubit.site/v1/future-u/trade/entrust/p
 --header 'Connection: keep-alive'
 ```
 
-## Response result
+## Response Result
 
 ```json
 {

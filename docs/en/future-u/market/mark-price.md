@@ -6,7 +6,7 @@
 
 | name   | location  | type   | required | Description   |
 | ------ | ----- | ------ | ---- | ------ |
-| symbol | query | string | 否   | symbol |
+| symbol | query | string | No   | symbol |
 
 
 > Request Example
@@ -23,7 +23,7 @@ curl --location --request GET 'https://api.ubit.site/v1/future-u/market/public/q
 --header 'Connection: keep-alive'
 ```
 
-## Response result
+## Response Result
 
 ```json
 {

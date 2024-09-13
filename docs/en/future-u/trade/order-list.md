@@ -6,14 +6,14 @@
 
 | name          | location  | type    | required | Description                                                         |
 | ------------- | ----- | ------- | ---- | ------------------------------------------------------------ |
-| page          | query | integer | 否   | 页码                                                         |
-| size          | query | integer | 否   | page size                                                       |
-| symbol        | query | string  | 否   | symbol                                                       |
-| startTime     | query | integer | 否   | 开始时间                                                     |
-| endTime       | query | integer | 否   | End Time                                                     |
-| forceClose    | query | boolean | 否   | Yes否强平                                                     |
-| state         | query | string  | 否   | 订单状态 NEW：新建订单（未成交）；PARTIALLY_FILLED：部分成交；FILLED：全部成交；CANCELED：用户撤销；REJECTED：下单失败；EXPIRED：已过期；UNFINISHED：未完成；HISTORY：（历史） |
-| clientOrderId | query | string  | 否   | 自定义订单id                                                 |
+| page          | query | integer | No   | 页码                                                         |
+| size          | query | integer | No   | page size                                                       |
+| symbol        | query | string  | No   | symbol                                                       |
+| startTime     | query | integer | No   | 开始时间                                                     |
+| endTime       | query | integer | No   | End Time                                                     |
+| forceClose    | query | boolean | No   | Yes否强平                                                     |
+| state         | query | string  | No   | 订单状态 NEW：新建订单（未成交）；PARTIALLY_FILLED：部分成交；FILLED：全部成交；CANCELED：用户撤销；REJECTED：下单失败；EXPIRED：已过期；UNFINISHED：未完成；HISTORY：（历史） |
+| clientOrderId | query | string  | No   | 自定义订单id                                                 |
 
 > Request Example
 
@@ -29,7 +29,7 @@ curl --location --request GET 'https://api.ubit.site/v1/future-u/trade/order/lis
 --header 'Connection: keep-alive'
 ```
 
-## Response result
+## Response Result
 
 ```json
 {

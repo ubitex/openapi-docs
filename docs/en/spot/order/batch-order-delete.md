@@ -26,7 +26,7 @@ curl --location --request DELETE 'https://api.ubit.site/v1/spot/batch-order' \
 --header 'Cookie: JSESSIONID=8FF5A9153450BDA558BF120CD75F0632' 
 ```
 
-## Response result
+## Response Result
 
 ```json
 {

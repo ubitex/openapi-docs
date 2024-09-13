@@ -22,7 +22,7 @@ curl --location --request GET 'https://api.ubit.site/v1/spot/balance?currency=US
 --header 'Connection: keep-alive'
 ```
 
-## Response result
+## Response Result
 
 ```json
 {

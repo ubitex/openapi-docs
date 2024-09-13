@@ -28,7 +28,7 @@ curl --location --request GET 'https://api.ubit.site/v1/future-u/user/balance/fu
 --header 'Cookie: JSESSIONID=CBA75C7DDBA9F5C552D6482C0FECB0A6'
 ```
 
-## Response result
+## Response Result
 
 ```json
 {

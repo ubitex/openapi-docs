@@ -19,7 +19,7 @@ curl --location --request GET 'https://api.ubit.site/v1/spot/public/currencies?a
 --header 'Connection: keep-alive'
 ```
 
-## Response result
+## Response Result
 
 ```json
 {

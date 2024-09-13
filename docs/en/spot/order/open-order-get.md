@@ -25,7 +25,7 @@ curl --location --request GET 'https://api.ubit.site/v1/spot/open-order?symbol=b
 --header 'Connection: keep-alive'
 ```
 
-## Response result
+## Response Result
 
 ```json
 {

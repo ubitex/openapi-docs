@@ -30,7 +30,7 @@ curl --location --request POST 'https://api.ubit.site/v1/future-u/trade/v2/entru
 --data-raw '{"symbol":"btc_usdt","origQty":1,"triggerPriceType":"INDEX_PRICE","triggerProfitPrice":56300,"triggerStopPrice":52000,"positionSide":"LONG"}'
 ```
 
-## Response result
+## Response Result
 
 ```json
 {

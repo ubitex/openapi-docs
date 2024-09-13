@@ -23,7 +23,7 @@ curl --location --request DELETE 'https://api.ubit.site/v1/future-u/trade/v2/ent
 --header 'Connection: keep-alive'
 ```
 
-## Response result
+## Response Result
 
 ```json
 {

@@ -6,7 +6,7 @@
 
 | name   | location  | type   | required | Description                               |
 | ------ | ----- | ------ | ---- | ---------------------------------- |
-| symbol | query | string | 否   | symbol（不传时撤销所有交易对订单） |
+| symbol | query | string | No   | symbol（不传时撤销所有交易对订单） |
 
 
 > Request Example
@@ -24,7 +24,7 @@ curl --location --request POST 'https://api.ubit.site/v1/future-u/trade/v2/order
 
 ```
 
-## Response result
+## Response Result
 
 ```json
 {

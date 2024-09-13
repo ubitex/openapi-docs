@@ -6,8 +6,8 @@
 
 | name          | location  | type    | required | Description |
 | ------------- | ----- | ------- | ---- | ---- |
-| orderId       | query | integer | 否   | none |
-| clientOrderId | query | string  | 否   | none |
+| orderId       | query | integer | No   | none |
+| clientOrderId | query | string  | No   | none |
 
 > Request Example
 
@@ -23,7 +23,7 @@ curl --location --request GET 'https://api.ubit.site/v1/future-u/trade/order/det
 --header 'Connection: keep-alive'
 ```
 
-## Response result
+## Response Result
 
 ```json
 {

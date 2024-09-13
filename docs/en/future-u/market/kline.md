@@ -8,9 +8,9 @@
 | --------- | ----- | ------- | ---- | ------------------------------------------------------------ |
 | symbol    | query | string  | Yes   | symbol                                                       |
 | interval  | query | string  | Yes   | 时间间隔支持1m，3m,5m,15m,30m,1h,2h,4h,6h,8h,12h,1d,2d,3d,1w,1M |
-| startTime | query | integer | 否   | Start Time                                                     |
-| endTime   | query | integer | 否   | End Time                                                     |
-| limit     | query | integer | 否   | 限制Page Limit                                                     |
+| startTime | query | integer | No   | Start Time                                                     |
+| endTime   | query | integer | No   | End Time                                                     |
+| limit     | query | integer | No   | 限制Page Limit                                                     |
 
 
 > Request Example
@@ -27,7 +27,7 @@ curl --location --request GET 'https://api.ubit.site/v1/future-u/market/public/q
 --header 'Connection: keep-alive'
 ```
 
-## Response result
+## Response Result
 
 ```json
 {

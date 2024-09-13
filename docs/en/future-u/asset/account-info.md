@@ -18,7 +18,7 @@ curl --location --request GET 'https://api.ubit.site/v1/future-u/user/account/in
 --header 'Connection: keep-alive'
 ```
 
-## Response result
+## Response Result
 
 ```json
 {

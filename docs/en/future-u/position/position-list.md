@@ -6,7 +6,7 @@
 
 | name   | location  | type   | required | Description                                     |
 | ------ | ----- | ------ | ---- | ---------------------------------------- |
-| symbol | query | string | 否   | symbol（不传时查询所有交易对的持仓信息） |
+| symbol | query | string | No   | symbol（不传时查询所有交易对的持仓信息） |
 
 > Request Example
 
@@ -22,7 +22,7 @@ curl --location --request GET 'https://api.ubit.site/v1/future-u/trade/position/
 --header 'Connection: keep-alive' 
 ```
 
-## Response result
+## Response Result
 
 ```json
 {

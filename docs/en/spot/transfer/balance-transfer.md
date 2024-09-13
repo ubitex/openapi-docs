@@ -31,7 +31,7 @@ curl --location --request POST 'https://api.ubit.site/v1/spot/balance/transfer' 
 --data-raw '{"bizId":1721515925613203,"from":"SPOT","to":"FUTURES_U","currency":"usdt","amount":"10","remak":"划转"}'
 ```
 
-## Response result
+## Response Result
 
 ```json
 {

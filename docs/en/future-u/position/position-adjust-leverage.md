@@ -26,7 +26,7 @@ curl --location --request POST 'https://api.ubit.site/v1/future-u/trade/position
 --data-raw '{"symbol":"btc_usdt","positionSide":"LONG","leverage":20}'
 ```
 
-## Response result
+## Response Result
 
 ```json
 {

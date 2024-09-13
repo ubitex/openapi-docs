@@ -23,7 +23,7 @@ curl --location --request GET 'https://api.ubit.site/v1/spot/order/4018787108816
 --header 'Connection: keep-alive'
 ```
 
-## Response result
+## Response Result
 
 ```json
 {

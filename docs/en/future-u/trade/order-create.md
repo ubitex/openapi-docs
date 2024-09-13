@@ -34,7 +34,7 @@ curl --location --request POST 'https://api.ubit.site/v1/future-u/trade/v2/order
 --data-raw '{"clientOrderId":"1232323232","symbol":"btc_usdt","orderSide":"BUY","orderType":"MARKET","origQty":10,"positionSide":"LONG","timeInForce":"IOC","triggerPriceType":"INDEX_PRICE"}'
 ```
 
-## Response result
+## Response Result
 
 ```json
 {

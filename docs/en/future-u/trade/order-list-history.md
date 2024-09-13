@@ -4,19 +4,19 @@
 
 ## Request Parameters
 
-| name          | location  | type    | required | Description                                                         |
-| ------------- | ----- | ------- | ---- | ------------------------------------------------------------ |
-| id            | query | integer | 否   | none                                                         |
-| direction     | query | string  | 否   | none                                                         |
-| limit         | query | integer | 否   | none                                                         |
-| symbol        | query | string  | 否   | symbol                                                       |
-| forceClose    | query | boolean | 否   | Yes否强平                                                     |
-| startTime     | query | integer | 否   | Start Time                                                     |
-| endTime       | query | integer | 否   | End Time                                                     |
-| origType      | query | integer | 否   | 条件委托type 1：限价止盈；2：限价止损；3：市价止盈；4：市价止损' |
-| orderSide     | query | integer | 否   | 下单方向: 1买、2卖                                           |
-| states        | query | string  | 否   | 订单状态 2: 部分成交 3：全部成交；4：用户撤销；6：已过期' (多选 英文逗号分隔) |
-| orderOrigType | query | integer | 否   | 历史订单type  1：限价委托； 2：市价委托； 3：限价止盈止损； 4：市价止盈止损' |
+| name          | location  | type    | required | Description                                   |
+| ------------- | ----- | ------- | ---- |-----------------------------------------------|
+| id            | query | integer | No   | none                                          |
+| direction     | query | string  | No   | none                                          |
+| limit         | query | integer | No   | none                                          |
+| symbol        | query | string  | No   | symbol                                        |
+| forceClose    | query | boolean | No   | 是否强平                                          |
+| startTime     | query | integer | No   | Start Time                                    |
+| endTime       | query | integer | No   | End Time                                      |
+| origType      | query | integer | No   | 条件委托type 1：限价止盈；2：限价止损；3：市价止盈；4：市价止损'         |
+| orderSide     | query | integer | No   | 下单方向: 1买、2卖                                   |
+| states        | query | string  | No   | 订单状态 2: 部分成交 3：全部成交；4：用户撤销；6：已过期' (多选 英文逗号分隔) |
+| orderOrigType | query | integer | No   | 历史订单type  1：限价委托； 2：市价委托； 3：限价止盈止损； 4：市价止盈止损' |
 
 > Request Example
 
@@ -32,7 +32,7 @@ curl --location --request GET 'https://api.ubit.site/v1/future-u/trade/order/lis
 --header 'Connection: keep-alive'
 ```
 
-## Response result
+## Response Result
 
 ```json
 {

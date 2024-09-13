@@ -6,13 +6,13 @@
 
 | name      | location  | type    | required | Description     |
 | --------- | ----- | ------- | ---- | -------- |
-| currency  | query | string  | 否   | coinname |
-| chain     | query | string  | 否   | 转账网络 |
-| startTime | query | integer | 否   | 开始时间 |
-| endTime   | query | integer | 否   | End Time |
-| status    | query | integer | 否   | 充值状态 |
-| page      | query | integer | 否   | 页码     |
-| size      | query | integer | 否   | 页大小   |
+| currency  | query | string  | No   | coinname |
+| chain     | query | string  | No   | 转账网络 |
+| startTime | query | integer | No   | 开始时间 |
+| endTime   | query | integer | No   | End Time |
+| status    | query | integer | No   | 充值状态 |
+| page      | query | integer | No   | 页码     |
+| size      | query | integer | No   | 页大小   |
 
 > Request Example
 
@@ -28,7 +28,7 @@ curl --location --request GET 'https://api.ubit.site/v1/spot/deposit/history?cur
 --header 'Connection: keep-alive'
 ```
 
-## Response result
+## Response Result
 
 ```json
 {

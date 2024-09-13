@@ -31,7 +31,7 @@ curl --location --request GET 'https://api.ubit.site/v1/spot/trade?symbol&orderS
 --header 'Connection: keep-alive' 
 ```
 
-## Response result
+## Response Result
 
 ```json
 {

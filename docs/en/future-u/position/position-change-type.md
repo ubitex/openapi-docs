@@ -26,7 +26,7 @@ curl --location --request POST 'https://api.ubit.site/v1/future-u/trade/position
 --data-raw '{"symbol":"bnb_usdt","positionSide":"LONG","positionType":"CROSSED"}'
 ```
 
-## Response result
+## Response Result
 
 ```json
 {

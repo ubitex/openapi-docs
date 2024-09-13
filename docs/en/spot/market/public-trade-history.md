@@ -6,10 +6,10 @@
 
 | name      | location  | type    | required | Description                             |
 | --------- | ----- | ------- | ---- | -------------------------------- |
-| symbol    | query | string  | 否   | symbol                           |
-| direction | query | string  | 否   | Direction (PREV: previous page; NEXT: Next page) |
-| fromId    | query | integer | 否   | 起始ID                           |
-| limit     | query | integer | 否   | 数量                             |
+| symbol    | query | string  | No   | symbol                           |
+| direction | query | string  | No   | Direction (PREV: previous page; NEXT: Next page) |
+| fromId    | query | integer | No   | 起始ID                           |
+| limit     | query | integer | No   | 数量                             |
 
 > Request Example
 
@@ -27,7 +27,7 @@ curl --location --request GET 'https://api.ubit.site/v1/spot/public/trade/histor
 
 
 
-## Response result
+## Response Result
 
 ```json
 {

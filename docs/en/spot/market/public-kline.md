@@ -6,11 +6,11 @@
 
 | name      | location  | type    | required | Description                                                     |
 | --------- | ----- | ------- | ---- | -------------------------------------------------------- |
-| symbol    | query | string  | 否   | symbol                                                   |
-| interval  | query | string  | 否   | K线type[1m;3m;5m;15m;30m;1h;2h;4h;6h;8h;12h;1d;3d;1w;1M] |
-| startTime | query | integer | 否   | 开始时间                                                 |
-| endTime   | query | integer | 否   | End Time                                                 |
-| limit     | query | integer | 否   | 限制数量                                                 |
+| symbol    | query | string  | No   | symbol                                                   |
+| interval  | query | string  | No   | K线type[1m;3m;5m;15m;30m;1h;2h;4h;6h;8h;12h;1d;3d;1w;1M] |
+| startTime | query | integer | No   | 开始时间                                                 |
+| endTime   | query | integer | No   | End Time                                                 |
+| limit     | query | integer | No   | 限制数量                                                 |
 
 > Request Example
 
@@ -27,7 +27,7 @@ curl --location --request GET 'https://api.ubit.site/v1/spot/public/kline?symbol
 ```
 
 
-## Response result
+## Response Result
 
 ```json
 {
