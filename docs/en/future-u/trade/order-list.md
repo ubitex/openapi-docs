@@ -1,21 +1,21 @@
-# 查询订单
+# Query Orders
 
 `GET` /v1/future-u/trade/order/list
 
-## 请求参数
+## Request Parameters
 
-| 名称          | 位置  | 类型    | 必选 | 说明                                                         |
+| name          | location  | type    | required | Description                                                         |
 | ------------- | ----- | ------- | ---- | ------------------------------------------------------------ |
 | page          | query | integer | 否   | 页码                                                         |
 | size          | query | integer | 否   | page size                                                       |
-| symbol        | query | string  | 否   | 交易对                                                       |
+| symbol        | query | string  | 否   | symbol                                                       |
 | startTime     | query | integer | 否   | 开始时间                                                     |
-| endTime       | query | integer | 否   | 结束时间                                                     |
-| forceClose    | query | boolean | 否   | 是否强平                                                     |
+| endTime       | query | integer | 否   | End Time                                                     |
+| forceClose    | query | boolean | 否   | Yes否强平                                                     |
 | state         | query | string  | 否   | 订单状态 NEW：新建订单（未成交）；PARTIALLY_FILLED：部分成交；FILLED：全部成交；CANCELED：用户撤销；REJECTED：下单失败；EXPIRED：已过期；UNFINISHED：未完成；HISTORY：（历史） |
 | clientOrderId | query | string  | 否   | 自定义订单id                                                 |
 
-> 请求示例
+> Request Example
 
 ```shell
 curl --location --request GET 'https://api.ubit.site/v1/future-u/trade/order/list?page&size&symbol&startTime&endTime&forceClose&state&clientOrderId=23121' \
@@ -29,7 +29,7 @@ curl --location --request GET 'https://api.ubit.site/v1/future-u/trade/order/lis
 --header 'Connection: keep-alive'
 ```
 
-## 响应结果
+## Response result
 
 ```json
 {

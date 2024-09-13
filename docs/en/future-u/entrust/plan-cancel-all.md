@@ -1,14 +1,14 @@
-# 撤销所有计划委托
+# Cancel All Trigger Orders
 
 `DELETE` /v1/future-u/trade/v2/entrust/cancel-all-plan
 
-## 请求参数
+## Request Parameters
 
-| 名称   | 位置  | 类型   | 必选 | 说明                           |
+| name   | location  | type   | required | Description                           |
 | ------ | ----- | ------ | ---- | ------------------------------ |
-| symbol | query | string | 否   | 交易对（不传时撤销所有交易对） |
+| symbol | query | string | 否   | symbol（不传时撤销所有交易对） |
 
-> 请求示例
+> Request Example
 
 ```shell
 curl --location --request DELETE 'https://api.ubit.site/v1/future-u/trade/v2/entrust/cancel-all-plan?symbol=btc_usdt' \
@@ -23,7 +23,7 @@ curl --location --request DELETE 'https://api.ubit.site/v1/future-u/trade/v2/ent
 
 ```
 
-## 响应结果
+## Response result
 
 ```json
 {

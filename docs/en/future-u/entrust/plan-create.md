@@ -1,23 +1,23 @@
-# 创建计划委托
+# Create Trigger Orders
 
 `DELETE` /v1/future-u/trade/v2/entrust/create-plan
 
-## 请求参数
+## Request Parameters
 
-| 名称                 | 位置   | 类型      | 必选    | 说明                                                                                                           |
+| name                 | location   | type      | required    | Description                                                                                                           |
 |--------------------|------|---------|-------|--------------------------------------------------------------------------------------------------------------|
-| symbol             | body | string  | true  | 交易对                                                                                                          |
+| symbol             | body | string  | true  | symbol                                                                                                          |
 | price              | body | number  | false | 价格                                                                                                           |
 | stopPrice          | body | number  | false | 触发价                                                                                                          |
 | origQty            | body | number  | true  | 数量（张）                                                                                                        |
-| entrustType        | body | string  | true  | 委托类型：TAKE_PROFIT(止盈限价单)；STOP(止损限价单)；TAKE_PROFIT_MARKET（止盈市价单）；STOP_MARKET（止损市价单）；TRAILING_STOP_MARKET（跟踪止损单） |
+| entrustType        | body | string  | true  | 委托type：TAKE_PROFIT(止盈限价单)；STOP(止损限价单)；TAKE_PROFIT_MARKET（止盈市价单）；STOP_MARKET（止损市价单）；TRAILING_STOP_MARKET（跟踪止损单） |
 | orderSide          | body | string  | true  | 订单方向：BUY;SELL                                                                                                |
 | positionSide       | body | string  | true  | 持仓方向：LONG;SHORT                                                                                              |
 | timeInForce        | body | string  | true  | 有效方式：GTC;IOC;FOK;GTX                                                                                         |
-| triggerPriceType   | body | string  | true  | 触发价格类型：INDEX_PRICE(指数价格); MARK_PRICE(标记价格)；LATEST_PRICE(最新价格)                                                |
+| triggerPriceType   | body | string  | true  | 触发价格type：INDEX_PRICE(指数价格); MARK_PRICE(标记价格)；LATEST_PRICE(最新价格)                                                |
 | expireTime         | body | integer | false | 过期时间                                                                                                         |
 
-> 请求示例
+> Request Example
 
 ```shell
 curl --location --request POST 'https://api.ubit.site/v1/future-u/trade/v2/entrust/create-plan' \
@@ -33,7 +33,7 @@ curl --location --request POST 'https://api.ubit.site/v1/future-u/trade/v2/entru
 --data-raw '{"symbol":"btc_usdt","price":"50000","stopPrice":"51000","orderSide":"BUY","entrustType":"TAKE_PROFIT","origQty":10,"positionSide":"LONG","timeInForce":"GTC","triggerPriceType":"INDEX_PRICE"}'
 ```
 
-## 响应结果
+## Response result
 
 ```json
 {

@@ -1,19 +1,19 @@
-# 查询成交明细
+# Order Transaction Details
 
 `GET` /v1/future-u/trade/order/trade-list
 
-## 请求参数
+## Request Parameters
 
-| 名称        | 位置    | 类型      | 必选 | 说明   |
+| name        | location    | type      | required | Description   |
 |-----------|-------|---------|----|------|
-| orderId   | query | integer | 否  | 订单Id |
-| symbol    | query | string  | 否  | 交易对  |
-| startTime | query | integer | 否  | 开始时间 |
-| endTime   | query | integer | 否  | 结束时间 |
-| page      | query | integer | 否  | 页码   |
-| size      | query | integer | 否  | page size  |
+| orderId   | query | integer | No  | 订单Id |
+| symbol    | query | string  | No  | symbol  |
+| startTime | query | integer | No  | 开始时间 |
+| endTime   | query | integer | No  | End Time |
+| page      | query | integer | No  | 页码   |
+| size      | query | integer | No  | page size  |
 
-> 请求示例
+> Request Example
 
 ```shell
 curl --location --request GET 'https://api.ubit.site/v1/future-u/trade/order/trade-list?orderId&symbol&startTime&endTime&page&size' \
@@ -27,7 +27,7 @@ curl --location --request GET 'https://api.ubit.site/v1/future-u/trade/order/tra
 --header 'Connection: keep-alive'
 ```
 
-## 响应结果
+## Response result
 
 ```json
 {

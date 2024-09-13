@@ -1,0 +1,40 @@
+# Get Index Price for Single Trading Pair
+
+`GET` /v1/future-u/market/public/q/symbol-index-price
+
+## Request Parameters
+
+| name   | location  | type   | required | Description   |
+| ------ | ----- | ------ | ---- | ------ |
+| symbol | query | string | 否   | symbol |
+
+> Request Example
+
+```shell
+curl --location --request GET 'https://api.ubit.site/v1/future-u/market/public/q/symbol-index-price?symbol=btc_usdt' \
+--header 'validate-algorithms: HmacSHA256' \
+--header 'validate-appkey: 2fa91add-388c-44f2-8365-f4b72886c135' \
+--header 'validate-recvwindow: 60000' \
+--header 'validate-timestamp: 1725624638072' \
+--header 'validate-signature: ba2b0e3112ce9f89a9f9d383a7b74cd154ed27ae1629c56a5ac2004e17264fe7' \
+--header 'Accept: */*' \
+--header 'Host: api.ubit.site' \
+--header 'Connection: keep-alive'
+```
+
+## Response result
+
+```json
+{
+    "code": 0,
+    "msg": "success",
+    "msgInfo": null,
+    "data": {
+        "s": "btc_usdt",
+        "p": "55907.84",
+        "t": 1725624637534
+    },
+    "ts": 1725624638502
+}
+```
+
