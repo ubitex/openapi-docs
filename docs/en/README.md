@@ -8,5 +8,6 @@ Welcome to the UBitEx API Documentation. UBitEx offers a REST API to meet your t
   A lightweight Java library is available here: [Java SDK](https://github.com/ubitex/api-ubitex.com)
 
 - **Customer Support**  
-  Get support in our Telegram group: [UBitEx API Support Group](https://t.me/ubitex_api_support)  
+
+[//]: # (  Get support in our Telegram group: [UBitEx API Support Group]&#40;https://t.me/ubitex_api_support&#41;  )
   For inquiries, please consult our online customer service.
