@@ -29,8 +29,8 @@
   * [获取交易对开仓量](/zh-cn/future-u/market/open-interest)
 
 * 市场收录
-  * [Get Futures Info](/zh-cn/future-u/quote/contracts.md)
-  * [Get Depth Info](/zh-cn/future-u/quote/orderbook.md)
+  * [获取合约信息](/zh-cn/future-u/quote/contracts.md)
+  * [获取交易对深度信息](/zh-cn/future-u/quote/orderbook.md)
 
 * 限价委托和市价委托
   * [下单](/zh-cn/future-u/trade/order-create)
