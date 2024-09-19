@@ -22,50 +22,50 @@ curl --location --request GET 'https://api.ubitex.com/v1/future-u/market/public/
   {
     "id": 123,
     "ask": "1817.32",
-    //当前最低价
+    //Current lowest ask price
     "base_currency": "ETH",
-    //标的币种，比如 BTC
+    //Symbol/currency code of base pair, eg. BTC
     "base_volume": "13267684284",
-    //24小时交易量
+    //24 hour trading volume
     "bid": "1817.31",
-    //当前最高价
+    //Current highest bid price
     "contractSize": 10,
-    //合约面值
+    //Futures par value
     "end_timestamp": 253402099200000,
-    //该衍生品的终结时间
+    //Ending of this derivative product
     "funding_rate": "-0.03",
-    //资金费率
+    //Fund rate
     "high": "1828.89",
-    //24小时最高成交价
+    //24-hour highest trading price
     "index_currency": "USD",
-    //指数的基础币种
+    //Underlying currency for index
     "index_name": "ETH-USD",
-    //基础指数的名称
+    //Name of the underlying index if any
     "index_price": "1816.61",
-    //基础指数价格
+    //Underlying index price
     "last_price": "1817.31",
-    //最新价格
+    //Latest price
     "low": "1778.65",
-    //24小时最低成交价
+    //24-hour lowest trading price
     "next_funding_rate": "-0.03",
-    //预计下一个资金费率
+    //Upcoming predicted funding rate
     "next_funding_rate_timestamp": 1698681600000,
-    //下一个资金费率时间
+    //Next funding rate time
     "open_interest": "2419347630",
-    //24小时合约持仓量
+    //The open interest in the last 24 hours in contracts
     "product_type": "PERPETUAL",
-    //产品类型
+    //Product type
     "start_timestamp": 1651328033000,
-    //该衍生品的开始时间
+    //Starting of this derivative product (relevant for expirable futures or options)
     "symbol": "eth_usd",
     "target_currency": "USD",
-    //报价币种
+    //Symbol/currency code of target pair, eg. ETH
     "target_volume": "73698647.51054371",
-    //24小时交易量
+    //24 hours trading volume
     "ticker_id": "ETH-USD",
-    //代码标识符
+    //Identifier of a ticker with delimiter to separate base/target, eg. BTC-PERP
     "underlyingType": 1
-    //标的类型，币本位，u本位
+    //Target type, Coin-M,USDT-M
   }
 ]
 ```
