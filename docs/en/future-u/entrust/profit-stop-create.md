@@ -17,7 +17,7 @@
 > Request Example
 
 ```shell
-curl --location --request POST 'https://api.ubit.site/v1/future-u/trade/v2/entrust/create-profit' \
+curl --location --request POST 'https://api.ubitex.com/v1/future-u/trade/v2/entrust/create-profit' \
 --header 'Content-Type: application/json' \
 --header 'validate-algorithms: HmacSHA256' \
 --header 'validate-appkey: 2fa91add-388c-44f2-8365-f4b72886c135' \
@@ -25,7 +25,7 @@ curl --location --request POST 'https://api.ubit.site/v1/future-u/trade/v2/entru
 --header 'validate-timestamp: 1725874904394' \
 --header 'validate-signature: b7536773e073a44b6915c02a0b99d659b27946c5bbce6da3020fdbdef6a71c17' \
 --header 'Accept: */*' \
---header 'Host: api.ubit.site' \
+--header 'Host: api.ubitex.com' \
 --header 'Connection: keep-alive' \
 --data-raw '{"symbol":"btc_usdt","origQty":1,"triggerPriceType":"INDEX_PRICE","triggerProfitPrice":56300,"triggerStopPrice":52000,"positionSide":"LONG"}'
 ```

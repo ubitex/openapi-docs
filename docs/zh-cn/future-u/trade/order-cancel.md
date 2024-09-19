@@ -12,7 +12,7 @@
 > 请求示例
 
 ```shell
-curl --location --request POST 'https://api.ubit.site/v1/future-u/trade/v2/order/cancel' \
+curl --location --request POST 'https://api.ubitex.com/v1/future-u/trade/v2/order/cancel' \
 --header 'Content-Type: application/json' \
 --header 'validate-algorithms: HmacSHA256' \
 --header 'validate-appkey: 2fa91add-388c-44f2-8365-f4b72886c135' \
@@ -20,7 +20,7 @@ curl --location --request POST 'https://api.ubit.site/v1/future-u/trade/v2/order
 --header 'validate-timestamp: 1725607411560' \
 --header 'validate-signature: 41c559c23f316df4e50bce85bff33e394d7348c8cfefd15c529a42175b610b30' \
 --header 'Accept: */*' \
---header 'Host: api.ubit.site' \
+--header 'Host: api.ubitex.com' \
 --header 'Connection: keep-alive' \
 --data-raw '{"clientOrderId":"1232323232"}'
 

@@ -11,14 +11,14 @@
 > 请求示例
 
 ```shell
-curl --location --request GET 'https://api.ubit.site/v1/future-u/market/public/q/ticker?symbol=btc_usdt' \
+curl --location --request GET 'https://api.ubitex.com/v1/future-u/market/public/q/ticker?symbol=btc_usdt' \
 --header 'validate-algorithms: HmacSHA256' \
 --header 'validate-appkey: 2fa91add-388c-44f2-8365-f4b72886c135' \
 --header 'validate-recvwindow: 6000' \
 --header 'validate-timestamp: 1725508200475' \
 --header 'validate-signature: 6011cb6f8b894c4ececdced5bd3c9a8a13dfdc388c92a07a4a20eed16837c6d7' \
 --header 'Accept: */*' \
---header 'Host: api.ubit.site' \
+--header 'Host: api.ubitex.com' \
 --header 'Connection: keep-alive'
 ```
 

@@ -18,14 +18,14 @@
 > 请求示例
 
 ```shell
-curl --location --request GET 'https://api.ubit.site/v1/future-u/trade/order/list?page&size&symbol&startTime&endTime&forceClose&state&clientOrderId=23121' \
+curl --location --request GET 'https://api.ubitex.com/v1/future-u/trade/order/list?page&size&symbol&startTime&endTime&forceClose&state&clientOrderId=23121' \
 --header 'validate-algorithms: HmacSHA256' \
 --header 'validate-appkey: 2fa91add-388c-44f2-8365-f4b72886c135' \
 --header 'validate-recvwindow: 60000' \
 --header 'validate-timestamp: 1725689464716' \
 --header 'validate-signature: 57a6f876933928306fe037130aae9d94fd844a55c0226a896c8e93e22eb7e65e' \
 --header 'Accept: */*' \
---header 'Host: api.ubit.site' \
+--header 'Host: api.ubitex.com' \
 --header 'Connection: keep-alive'
 ```
 

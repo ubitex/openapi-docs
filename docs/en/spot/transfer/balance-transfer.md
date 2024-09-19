@@ -18,7 +18,7 @@
 > Request Example
 
 ```shell
-curl --location --request POST 'https://api.ubit.site/v1/spot/balance/transfer' \
+curl --location --request POST 'https://api.ubitex.com/v1/spot/balance/transfer' \
 --header 'Content-Type: application/json' \
 --header 'validate-algorithms: HmacSHA256' \
 --header 'validate-appkey: 2fa91add-388c-44f2-8365-f4b72886c135' \
@@ -26,7 +26,7 @@ curl --location --request POST 'https://api.ubit.site/v1/spot/balance/transfer' 
 --header 'validate-timestamp: 1725593270606' \
 --header 'validate-signature: 64c7b5083c41fc2f6670ac319b1d8bd75cdddd6d0e3e3ebdf2e78f1722d32244' \
 --header 'Accept: */*' \
---header 'Host: api.ubit.site' \
+--header 'Host: api.ubitex.com' \
 --header 'Connection: keep-alive' \
 --data-raw '{"bizId":1721515925613203,"from":"SPOT","to":"FUTURES_U","currency":"usdt","amount":"10","remak":"划转"}'
 ```

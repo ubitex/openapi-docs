@@ -21,14 +21,14 @@
 > Request Example
 
 ```shell
-curl --location --request GET 'https://api.ubit.site/v1/future-u/trade/order/list-history?id&direction=NEXT&limit=100&symbol&forceClose&startTime&endTime&origType&orderSide&states&orderOrigType' \
+curl --location --request GET 'https://api.ubitex.com/v1/future-u/trade/order/list-history?id&direction=NEXT&limit=100&symbol&forceClose&startTime&endTime&origType&orderSide&states&orderOrigType' \
 --header 'validate-algorithms: HmacSHA256' \
 --header 'validate-appkey: 2fa91add-388c-44f2-8365-f4b72886c135' \
 --header 'validate-recvwindow: 6000' \
 --header 'validate-timestamp: 1725513004389' \
 --header 'validate-signature: 8b4ef0fca045aac30a771dd818410a32e073977fbd3663483cb0d5fb32574f7a' \
 --header 'Accept: */*' \
---header 'Host: api.ubit.site' \
+--header 'Host: api.ubitex.com' \
 --header 'Connection: keep-alive'
 ```
 

@@ -19,7 +19,7 @@
 > Request Example
 
 ```shell
-curl --location --request POST 'https://api.ubit.site/v1/spot/order' \
+curl --location --request POST 'https://api.ubitex.com/v1/spot/order' \
 --header 'Content-Type: application/json' \
 --header 'validate-algorithms: HmacSHA256' \
 --header 'validate-appkey: 2fa91add-388c-44f2-8365-f4b72886c135' \
@@ -27,7 +27,7 @@ curl --location --request POST 'https://api.ubit.site/v1/spot/order' \
 --header 'validate-timestamp: 1725455266041' \
 --header 'validate-signature: ce246607785e168d4677afff5af3746eb8513133d11ca3c5e3913eeea5aca63c' \
 --header 'Accept: */*' \
---header 'Host: api.ubit.site' \
+--header 'Host: api.ubitex.com' \
 --header 'Connection: keep-alive' \
 --data-raw '{"symbol":"BTC_USDT","clientOrderId":"16559590087220001","side":"BUY","type":"LIMIT","timeInForce":"FOK","bizType":"SPOT","price":40000,"quantity":2,"media":"btok","mediaChannel":"12345"}'
 ```

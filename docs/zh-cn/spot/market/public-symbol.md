@@ -14,14 +14,14 @@
 > 请求示例
 
 ```shell
-curl --location --request GET 'https://api.ubit.site/v1/spot/public/symbol?symbol=btc_usdt&symbols=&version&tags' \
+curl --location --request GET 'https://api.ubitex.com/v1/spot/public/symbol?symbol=btc_usdt&symbols=&version&tags' \
 --header 'validate-algorithms: HmacSHA256' \
 --header 'validate-appkey: 2fa91add-388c-44f2-8365-f4b72886c135' \
 --header 'validate-recvwindow: 6000' \
 --header 'validate-timestamp: 1725521245226' \
 --header 'validate-signature: 4d09d1d3f75b2a2db923104051c25848e4b161fa631f1baa78e5d81fa2b390f8' \
 --header 'Accept: */*' \
---header 'Host: api.ubit.site' \
+--header 'Host: api.ubitex.com' \
 --header 'Connection: keep-alive' 
 ```
 

@@ -14,7 +14,7 @@
 > Request Example
 
 ```shell
-curl --location --request DELETE 'https://api.ubit.site/v1/spot/open-order' \
+curl --location --request DELETE 'https://api.ubitex.com/v1/spot/open-order' \
 --header 'Content-Type: application/json' \
 --header 'validate-algorithms: HmacSHA256' \
 --header 'validate-appkey: 2fa91add-388c-44f2-8365-f4b72886c135' \
@@ -22,7 +22,7 @@ curl --location --request DELETE 'https://api.ubit.site/v1/spot/open-order' \
 --header 'validate-timestamp: 1725547790951' \
 --header 'validate-signature: ad9489ea14dee72963a45c3ab1e724dd049cec298fb6418d166b00d70b6cab9a' \
 --header 'Accept: */*' \
---header 'Host: api.ubit.site' \
+--header 'Host: api.ubitex.com' \
 --header 'Connection: keep-alive' \
 --header 'Cookie: JSESSIONID=8FF5A9153450BDA558BF120CD75F0632' \
 --data-raw '{"symbol":"btc_usdt","side":"SELL","bizType":"SPOT","mode":"CMD"}'

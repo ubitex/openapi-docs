@@ -12,14 +12,14 @@
 > Request Example
 
 ```shell
-curl --location --request GET 'https://api.ubit.site/v1/future-u/market/public/q/mark-price' \
+curl --location --request GET 'https://api.ubitex.com/v1/future-u/market/public/q/mark-price' \
 --header 'validate-algorithms: HmacSHA256' \
 --header 'validate-appkey: 2fa91add-388c-44f2-8365-f4b72886c135' \
 --header 'validate-recvwindow: 60000' \
 --header 'validate-timestamp: 1725625539236' \
 --header 'validate-signature: d47872d9843f957421da0b095dce9acdef38771db91796e28673d6c318d0f9f6' \
 --header 'Accept: */*' \
---header 'Host: api.ubit.site' \
+--header 'Host: api.ubitex.com' \
 --header 'Connection: keep-alive'
 ```
 

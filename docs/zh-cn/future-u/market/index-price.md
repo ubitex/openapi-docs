@@ -11,14 +11,14 @@
 > 请求示例
 
 ```shell
-curl --location --request GET 'https://api.ubit.site/v1/future-u/market/public/q/index-price' \
+curl --location --request GET 'https://api.ubitex.com/v1/future-u/market/public/q/index-price' \
 --header 'validate-algorithms: HmacSHA256' \
 --header 'validate-appkey: 2fa91add-388c-44f2-8365-f4b72886c135' \
 --header 'validate-recvwindow: 60000' \
 --header 'validate-timestamp: 1725625570595' \
 --header 'validate-signature: f64604b3602ab804c8eeb8ab541d3f6bda0d5cc49175c9d5734db9309a455a1a' \
 --header 'Accept: */*' \
---header 'Host: api.ubit.site' \
+--header 'Host: api.ubitex.com' \
 --header 'Connection: keep-alive'
 ```
 

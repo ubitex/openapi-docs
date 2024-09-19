@@ -14,7 +14,7 @@
 > Request Example
 
 ```shell
-curl --location --request DELETE 'https://api.ubit.site/v1/future-u/trade/v2/entrust/update-profit-stop' \
+curl --location --request DELETE 'https://api.ubitex.com/v1/future-u/trade/v2/entrust/update-profit-stop' \
 --header 'Content-Type: application/json' \
 --header 'validate-algorithms: HmacSHA256' \
 --header 'validate-appkey: 2fa91add-388c-44f2-8365-f4b72886c135' \
@@ -22,7 +22,7 @@ curl --location --request DELETE 'https://api.ubit.site/v1/future-u/trade/v2/ent
 --header 'validate-timestamp: 1725876765314' \
 --header 'validate-signature: 217dd75468c495a0e0e216a3818587bd32c81d6621105cdfb025bb1c9e19e66d' \
 --header 'Accept: */*' \
---header 'Host: api.ubit.site' \
+--header 'Host: api.ubitex.com' \
 --header 'Connection: keep-alive' \
 --data-raw '{"profitId":403374944700068900,"triggerPriceType":"INDEX_PRICE","triggerProfitPrice":56400,"triggerStopPrice":52100}'
 ```

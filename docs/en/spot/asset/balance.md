@@ -11,14 +11,14 @@
 > Request Example
 
 ```shell
-curl --location --request GET 'https://api.ubit.site/v1/spot/balance?currency=USDT' \
+curl --location --request GET 'https://api.ubitex.com/v1/spot/balance?currency=USDT' \
 --header 'validate-algorithms: HmacSHA256' \
 --header 'validate-appkey: 2fa91add-388c-44f2-8365-f4b72886c135' \
 --header 'validate-recvwindow: 6000' \
 --header 'validate-timestamp: 1725534383748' \
 --header 'validate-signature: e91e5d4d27d179606b618ae7c728390d32674c660008719cc8a6d09d772d694f' \
 --header 'Accept: */*' \
---header 'Host: api.ubit.site' \
+--header 'Host: api.ubitex.com' \
 --header 'Connection: keep-alive'
 ```
 

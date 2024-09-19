@@ -17,14 +17,14 @@
 > 请求示例
 
 ```shell
-curl --location --request GET 'https://api.ubit.site/v1/spot/withdraw/history?currency=usdt&chain=Tron&status&fromId&direction=NEXT&limit=10&startTime&endTime' \
+curl --location --request GET 'https://api.ubitex.com/v1/spot/withdraw/history?currency=usdt&chain=Tron&status&fromId&direction=NEXT&limit=10&startTime&endTime' \
 --header 'validate-algorithms: HmacSHA256' \
 --header 'validate-appkey: 2fa91add-388c-44f2-8365-f4b72886c135' \
 --header 'validate-recvwindow: 6000' \
 --header 'validate-timestamp: 1725590621414' \
 --header 'validate-signature: 689e4025364635f5b4aca0b9013d947a913c25305227ea144dc8f299d8a4d827' \
 --header 'Accept: */*' \
---header 'Host: api.ubit.site' \
+--header 'Host: api.ubitex.com' \
 --header 'Connection: keep-alive' \
 --header 'Cookie: JSESSIONID=8FF5A9153450BDA558BF120CD75F0632'
 ```

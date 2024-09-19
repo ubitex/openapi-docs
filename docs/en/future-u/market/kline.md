@@ -16,14 +16,14 @@
 > Request Example
 
 ```shell
-curl --location --request GET 'https://api.ubit.site/v1/future-u/market/public/q/kline?symbol=btc_usdt&interval=1m&startTime&endTime&limit=5' \
+curl --location --request GET 'https://api.ubitex.com/v1/future-u/market/public/q/kline?symbol=btc_usdt&interval=1m&startTime&endTime&limit=5' \
 --header 'validate-algorithms: HmacSHA256' \
 --header 'validate-appkey: 2fa91add-388c-44f2-8365-f4b72886c135' \
 --header 'validate-recvwindow: 60000' \
 --header 'validate-timestamp: 1725625686611' \
 --header 'validate-signature: b2c2e24f2d43458af8ba91afa38cafa0e1440f1319394d70743550dc0064538d' \
 --header 'Accept: */*' \
---header 'Host: api.ubit.site' \
+--header 'Host: api.ubitex.com' \
 --header 'Connection: keep-alive'
 ```
 

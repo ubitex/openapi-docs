@@ -24,7 +24,7 @@
 > Request Example
 
 ```shell
-curl --location --request POST 'https://api.ubit.site/v1/future-u/trade/v2/order/create-batch' \
+curl --location --request POST 'https://api.ubitex.com/v1/future-u/trade/v2/order/create-batch' \
 --header 'Content-Type: application/json' \
 --header 'validate-algorithms: HmacSHA256' \
 --header 'validate-appkey: 2fa91add-388c-44f2-8365-f4b72886c135' \
@@ -32,7 +32,7 @@ curl --location --request POST 'https://api.ubit.site/v1/future-u/trade/v2/order
 --header 'validate-timestamp: 1725620478641' \
 --header 'validate-signature: 9bb122d85d1397fecfe64a1022512b63eb2981175483651c2a93b78e2b808a33' \
 --header 'Accept: */*' \
---header 'Host: api.ubit.site' \
+--header 'Host: api.ubitex.com' \
 --header 'Connection: keep-alive' \
 --data-raw '[{"symbol":"btc_usdt","orderSide":"BUY","orderType":"MARKET","origQty":20,"positionSide":"LONG","timeInForce":"IOC","triggerPriceType":"INDEX_PRICE"},{"symbol":"eth_usdt","orderSide":"BUY","orderType":"MARKET","origQty":20,"positionSide":"LONG","timeInForce":"IOC","triggerPriceType":"INDEX_PRICE"}]'
 

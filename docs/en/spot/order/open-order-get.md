@@ -14,14 +14,14 @@
 > Request Example
 
 ```shell
-curl --location --request GET 'https://api.ubit.site/v1/spot/open-order?symbol=btc_usdt&bizType=SPOT&side=BUY&limit=10' \
+curl --location --request GET 'https://api.ubitex.com/v1/spot/open-order?symbol=btc_usdt&bizType=SPOT&side=BUY&limit=10' \
 --header 'validate-algorithms: HmacSHA256' \
 --header 'validate-appkey: 2fa91add-388c-44f2-8365-f4b72886c135' \
 --header 'validate-recvwindow: 6000' \
 --header 'validate-timestamp: 1725547662850' \
 --header 'validate-signature: 7601e09ff34960a24376e779f49e939cfc887757a3be9b62c0963f25b2387413' \
 --header 'Accept: */*' \
---header 'Host: api.ubit.site' \
+--header 'Host: api.ubitex.com' \
 --header 'Connection: keep-alive'
 ```
 

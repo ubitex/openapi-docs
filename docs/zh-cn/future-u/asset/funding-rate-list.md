@@ -16,14 +16,14 @@
 > 请求示例
 
 ```shell
-curl --location --request GET 'https://api.ubit.site/v1/future-u/user/balance/funding-rate-list?symbol=&id&direction=NEXT&limit=20&startTime&endTime' \
+curl --location --request GET 'https://api.ubitex.com/v1/future-u/user/balance/funding-rate-list?symbol=&id&direction=NEXT&limit=20&startTime&endTime' \
 --header 'validate-algorithms: HmacSHA256' \
 --header 'validate-appkey: 2fa91add-388c-44f2-8365-f4b72886c135' \
 --header 'validate-recvwindow: 60000' \
 --header 'validate-timestamp: 1725693243052' \
 --header 'validate-signature: de0de42edbda4e18eacee3d27aac7f3e38f2b0f9a951982c91709c55c739a469' \
 --header 'Accept: */*' \
---header 'Host: api.ubit.site' \
+--header 'Host: api.ubitex.com' \
 --header 'Connection: keep-alive' \
 --header 'Cookie: JSESSIONID=CBA75C7DDBA9F5C552D6482C0FECB0A6'
 ```

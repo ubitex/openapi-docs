@@ -7,14 +7,14 @@
 > Request Example
 
 ```shell
-curl --location --request GET 'https://api.ubit.site/v1/spot/public/currencies?accessKey=2fa91add-388c-44f2-8365-f4b72886c135&secretKey=6fb7fc1dde997cc03e75a460d07184c9c9a14704' \
+curl --location --request GET 'https://api.ubitex.com/v1/spot/public/currencies?accessKey=2fa91add-388c-44f2-8365-f4b72886c135&secretKey=6fb7fc1dde997cc03e75a460d07184c9c9a14704' \
 --header 'validate-algorithms: HmacSHA256' \
 --header 'validate-appkey: 2fa91add-388c-44f2-8365-f4b72886c135' \
 --header 'validate-recvwindow: 6000' \
 --header 'validate-timestamp: 1725522327919' \
 --header 'validate-signature: 6926466add838acacb21492954dc7c098870dba09b0de9a088d811840b158e9b' \
 --header 'Accept: */*' \
---header 'Host: api.ubit.site' \
+--header 'Host: api.ubitex.com' \
 --header 'Connection: keep-alive'
 ```
 

@@ -18,14 +18,14 @@
 > 请求示例
 
 ```shell
-curl --location --request GET 'https://api.ubit.site/v1/future-u/user/balance/bills?symbol=btc_usdt&id&direction=NEXT&limit=10&coin&type&startTime&endTime' \
+curl --location --request GET 'https://api.ubitex.com/v1/future-u/user/balance/bills?symbol=btc_usdt&id&direction=NEXT&limit=10&coin&type&startTime&endTime' \
 --header 'validate-algorithms: HmacSHA256' \
 --header 'validate-appkey: 2fa91add-388c-44f2-8365-f4b72886c135' \
 --header 'validate-recvwindow: 6000' \
 --header 'validate-timestamp: 1725514474787' \
 --header 'validate-signature: 00f5c33e3c0f2610e3103b5bff81b255a046d68576cd40b99d187a0006a67229' \
 --header 'Accept: */*' \
---header 'Host: api.ubit.site' \
+--header 'Host: api.ubitex.com' \
 --header 'Connection: keep-alive' \
 --header 'Cookie: JSESSIONID=8FF5A9153450BDA558BF120CD75F0632'
 ```

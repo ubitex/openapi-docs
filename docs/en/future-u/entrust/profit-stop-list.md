@@ -16,14 +16,14 @@
 > Request Example
 
 ```shell
-curl --location --request GET 'https://api.ubit.site/v1/future-u/trade/entrust/profit-list?symbol=btc_usdt&page=1&size=10&startTime&endTime&state' \
+curl --location --request GET 'https://api.ubitex.com/v1/future-u/trade/entrust/profit-list?symbol=btc_usdt&page=1&size=10&startTime&endTime&state' \
 --header 'validate-algorithms: HmacSHA256' \
 --header 'validate-appkey: 2fa91add-388c-44f2-8365-f4b72886c135' \
 --header 'validate-recvwindow: 60000' \
 --header 'validate-timestamp: 1725874271866' \
 --header 'validate-signature: 6ab89fa414e03238a55c026ed6672213af142065a12845d7c1021aeb70374aaa' \
 --header 'Accept: */*' \
---header 'Host: api.ubit.site' \
+--header 'Host: api.ubitex.com' \
 --header 'Connection: keep-alive'
 ```
 
