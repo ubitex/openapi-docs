@@ -8,15 +8,12 @@
 |--------|-------|--------|----|--------|
 | symbol | query | string | Yes  | symbol |
 
+Note：This method does not require a signature.
+
 > Request Example
 
 ```shell
 curl --location --request GET 'https://api.ubitex.com/v1/future-u/market/public/symbol/detail?symbol=btc_usdt' \
---header 'validate-algorithms: HmacSHA256' \
---header 'validate-appkey: 2fa91add-388c-44f2-8365-f4b72886c135' \
---header 'validate-recvwindow: 60000' \
---header 'validate-timestamp: 1725623347492' \
---header 'validate-signature: 06d46228f70e01cdc68bd167d6aed1577fcf9b960f8202f5d7e4b6d02cc269fc' \
 --header 'Accept: */*' \
 --header 'Host: api.ubitex.com' \
 --header 'Connection: keep-alive'

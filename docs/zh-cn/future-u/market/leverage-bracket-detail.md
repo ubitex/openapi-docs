@@ -8,15 +8,12 @@
 |--------|-------|--------|----|------|
 | symbol | query | string | 是  | none |
 
+注：此方法不需要签名
+
 > 请求示例
 
 ```shell
 curl --location --request GET 'https://api.ubitex.com/v1/future-u/market/public/leverage/bracket/detail?symbol=btc_usdt' \
---header 'validate-algorithms: HmacSHA256' \
---header 'validate-appkey: 2fa91add-388c-44f2-8365-f4b72886c135' \
---header 'validate-recvwindow: 6000' \
---header 'validate-timestamp: 1725507938857' \
---header 'validate-signature: c3391bbe1e26c6e1d9294aa244ac8afb5339e1fd3bdcbb4fad3dab9fe05ee749' \
 --header 'Accept: */*' \
 --header 'Host: api.ubitex.com' \
 --header 'Connection: keep-alive'

@@ -4,15 +4,12 @@
 
 ## 请求参数
 
+注：此方法不需要签名
+
 > 请求示例
 
 ```shell
 curl --location --request GET 'https://api.ubitex.com/v1/future-u/market/public/symbol/list' \
---header 'validate-algorithms: HmacSHA256' \
---header 'validate-appkey: 2fa91add-388c-44f2-8365-f4b72886c135' \
---header 'validate-recvwindow: 6000' \
---header 'validate-timestamp: 1725507858019' \
---header 'validate-signature: 4424280c82f49a19746e7bcd72a1db40693b7df3470f1c067e6a07582b810206' \
 --header 'Accept: */*' \
 --header 'Host: api.ubitex.com' \
 --header 'Connection: keep-alive'

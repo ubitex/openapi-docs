@@ -28,6 +28,10 @@
   * [Get Ask Bid Market Information for All Trading Pairs](/en/future-u/market/ticker-books)
   * [Get the open position of a trading pair](/en/future-u/market/open-interest)
 
+* Quote Collection
+  * [Get Futures Info](/en/future-u/quote/contracts.md)
+  * [Get Depth Info](/en/future-u/quote/orderbook.md)
+
 * Order
   * [Create Orders](/en/future-u/trade/order-create)
   * [Batch Create Orders](/en/future-u/trade/order-create-batch)

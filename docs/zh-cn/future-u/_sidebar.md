@@ -28,6 +28,10 @@
   * [获取全交易对的买一卖一行情信息](/zh-cn/future-u/market/ticker-books)
   * [获取交易对开仓量](/zh-cn/future-u/market/open-interest)
 
+* 市场收录
+  * [Get Futures Info](/zh-cn/future-u/quote/contracts.md)
+  * [Get Depth Info](/zh-cn/future-u/quote/orderbook.md)
+
 * 限价委托和市价委托
   * [下单](/zh-cn/future-u/trade/order-create)
   * [批量下单](/zh-cn/future-u/trade/order-cancel-batch)

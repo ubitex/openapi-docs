@@ -4,10 +4,10 @@
 
 ## Request Parameters
 
-| name            | location   | type           | required    | Description                  |
-|---------------|------|--------------|-------|---------------------|
-| orderId       | body | integer | false | 订单id，任意传其中一个        |
-| clientOrderId | body | string  | false | client 订单id，任意传其中一个 |
+| name          | location | type    | required | Description         |
+|---------------|----------|---------|----------|---------------------|
+| orderId       | body     | integer | false    | 订单id，任意传其中一个        |
+| clientOrderId | body     | string  | false    | client 订单id，任意传其中一个 |
 
 > Request Example
 

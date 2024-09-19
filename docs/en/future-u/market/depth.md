@@ -9,15 +9,12 @@
 | symbol | query | string  | Yes   | symbol               |
 | level  | query | integer | Yes   | 档位（min:1,max:50） |
 
+Note：This method does not require a signature.
+
 > Request Example
 
 ```shell
 curl --location --request GET 'https://api.ubitex.com/v1/future-u/market/public/q/depth?symbol=btc_usdt&level=10' \
---header 'validate-algorithms: HmacSHA256' \
---header 'validate-appkey: 2fa91add-388c-44f2-8365-f4b72886c135' \
---header 'validate-recvwindow: 60000' \
---header 'validate-timestamp: 1725624566561' \
---header 'validate-signature: 6274fc8b61521fe12f0a643d9eaa858e0e0bca8e2d7ca9dab38c75c7e022d4a2' \
 --header 'Accept: */*' \
 --header 'Host: api.ubitex.com' \
 --header 'Connection: keep-alive'

@@ -8,15 +8,12 @@
 | ------ | ----- | ------ | ---- | ------ |
 | symbol | query | string | 是   | 交易对 |
 
+注：此方法不需要签名
+
 > 请求示例
 
 ```shell
 curl --location --request GET 'https://api.ubitex.com/v1/future-u/market/public/q/agg-ticker?symbol=btc_usdt' \
---header 'validate-algorithms: HmacSHA256' \
---header 'validate-appkey: 2fa91add-388c-44f2-8365-f4b72886c135' \
---header 'validate-recvwindow: 6000' \
---header 'validate-timestamp: 1725508272575' \
---header 'validate-signature: 071d9f12c3d7445788c009f1e429a4d32bbd8b9ce63a1364200755d03f2ea1be' \
 --header 'Accept: */*' \
 --header 'Host: api.ubitex.com' \
 --header 'Connection: keep-alive'

@@ -12,15 +12,12 @@
 | endTime   | query | integer | 否   | 结束时间                                                 |
 | limit     | query | integer | 否   | 限制数量                                                 |
 
+注：此方法不需要签名
+
 > 请求示例
 
 ```shell
 curl --location --request GET 'https://api.ubitex.com/v1/spot/public/kline?symbol=btc_usdt&interval=1m&startTime&endTime&limit=5' \
---header 'validate-algorithms: HmacSHA256' \
---header 'validate-appkey: 2fa91add-388c-44f2-8365-f4b72886c135' \
---header 'validate-recvwindow: 6000' \
---header 'validate-timestamp: 1725521343735' \
---header 'validate-signature: a4d7a2295a501ddd79f9f4f17731b7429bf633ce6a60eb0d4e6312b3826c5d08' \
 --header 'Accept: */*' \
 --header 'Host: api.ubitex.com' \
 --header 'Connection: keep-alive' 

@@ -4,15 +4,12 @@
 
 ## Request Parameters
 
+Note：This method does not require a signature.
+
 > Request Example
 
 ```shell
 curl --location --request GET 'https://api.ubitex.com/v1/future-u/market/public/leverage/bracket/list' \
---header 'validate-algorithms: HmacSHA256' \
---header 'validate-appkey: 2fa91add-388c-44f2-8365-f4b72886c135' \
---header 'validate-recvwindow: 6000' \
---header 'validate-timestamp: 1725507967555' \
---header 'validate-signature: 27f48c1fad34f559450a9b8cf36a5607912afc812a397b6c78697f4a42f82bf2' \
 --header 'Accept: */*' \
 --header 'Host: api.ubitex.com' \
 --header 'Connection: keep-alive'

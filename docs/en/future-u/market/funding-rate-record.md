@@ -11,15 +11,12 @@
 | direction | query | string  | No   | Direction (PREV: previous page; NEXT: Next page) |
 | limit     | query | integer | No   | Page Limit                             |
 
+Note：This method does not require a signature.
+
 > Request Example
 
 ```shell
 curl --location --request GET 'https://api.ubitex.com/v1/future-u/market/public/q/funding-rate-record?symbol=btc_usdt&id&direction&limit' \
---header 'validate-algorithms: HmacSHA256' \
---header 'validate-appkey: 2fa91add-388c-44f2-8365-f4b72886c135' \
---header 'validate-recvwindow: 6000' \
---header 'validate-timestamp: 1725509057080' \
---header 'validate-signature: 60d7acac7aecbef707546d91dc978000b003e0046f422297b8ad1816c8a1bca3' \
 --header 'Accept: */*' \
 --header 'Host: api.ubitex.com' \
 --header 'Connection: keep-alive'

@@ -11,15 +11,12 @@
 | fromId    | query | integer | No   | 起始ID                           |
 | limit     | query | integer | No   | 数量                             |
 
+Note：This method does not require a signature.
+
 > Request Example
 
 ```shell
 curl --location --request GET 'https://api.ubitex.com/v1/spot/public/trade/history?symbol=btc_usdt&direction=NEXT&fromId&limit=2' \
---header 'validate-algorithms: HmacSHA256' \
---header 'validate-appkey: 2fa91add-388c-44f2-8365-f4b72886c135' \
---header 'validate-recvwindow: 6000' \
---header 'validate-timestamp: 1725521441022' \
---header 'validate-signature: 3c20f6fa54b8b1d78057794f9953818115a4c041044522c23cf64171d56511ec' \
 --header 'Accept: */*' \
 --header 'Host: api.ubitex.com' \
 --header 'Connection: keep-alive'

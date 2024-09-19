@@ -11,15 +11,12 @@
 | symbol | query | string  | 否   | 交易对 |
 | limit  | query | integer | 否   | 数量   |
 
+注：此方法不需要签名
+
 > 请求示例
 
 ```shell
 curl --location --request GET 'https://api.ubitex.com/v1/spot/public/trade/recent?symbol=btc_usdt&limit=2' \
---header 'validate-algorithms: HmacSHA256' \
---header 'validate-appkey: 2fa91add-388c-44f2-8365-f4b72886c135' \
---header 'validate-recvwindow: 6000' \
---header 'validate-timestamp: 1725521384599' \
---header 'validate-signature: 36822fe15326882cbe9ee4a7f75ac172bbe75314efe080a8b43c7c7160b4aa90' \
 --header 'Accept: */*' \
 --header 'Host: api.ubitex.com' \
 --header 'Connection: keep-alive' 
