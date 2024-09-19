@@ -9,6 +9,5 @@
 
 
 - 客户服务
-
-[//]: # (  在我们的电报组中获取支持:  [UBitEx API Support Group]&#40;https://t.me/ubitex_api_support&#41;)
+  在我们的电报组中获取支持:  [UBitEx API Support Group](https://t.me/UbitEx_UB)
   如有疑问请咨询在线客服
