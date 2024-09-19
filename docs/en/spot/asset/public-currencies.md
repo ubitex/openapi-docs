@@ -3,7 +3,6 @@
 `GET` /v1/spot/public/currencies
 
 ## Request Parameters
-无
 
 > Request Example
 

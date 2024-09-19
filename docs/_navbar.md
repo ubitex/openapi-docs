@@ -1,5 +1,7 @@
 <!-- _navbar.md -->
 
+* [UBitEx](https://www.ubitex.com/)
+
 * [首页](/)
 
 * [现货](/zh-cn/spot/)

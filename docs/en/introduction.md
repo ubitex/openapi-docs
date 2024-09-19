@@ -1,6 +1,6 @@
 # REST API
 
-> `Domain`: `http://api.ubit.site`
+> `Domain`: `https://api.ubitex.com`
 
 ----
 
@@ -49,7 +49,7 @@ To ensure data security for UbitEx's open APIs, including protection against dat
 
 ## Signature Generation
 
-For example, with `http://api.ubit.site/v1/spot`:
+For example, with `https://api.ubitex.com/v1/spot`:
 Here’s how you can use `echo`, `openssl`, and `curl` in a Linux bash environment to call an API for placing an order:
 
 Example `appKey` and `secret`:

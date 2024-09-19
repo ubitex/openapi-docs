@@ -1,6 +1,6 @@
 # REST API
 
-> `域名`:  `http://api.ubit.site `
+> `域名`:  `https://api.ubitex.com`
 
 ----
 
@@ -55,7 +55,7 @@ apiKey限流示例说明：`50/s/apiKey`，表示每个apiKey每秒该接口请�
 
 ## 签名生成
 
-以 http://api.ubit.site/v1/spot 为例  
+以 https://api.ubitex.com/v1/spot 为例  
 以下是在linux bash环境下使用 echo openssl 和curl工具实现的一个调用接口下单的示例
 
 appkey、secret仅供示范:
