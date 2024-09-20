@@ -1,6 +1,6 @@
 <!-- _navbar.md -->
 
-* [UBitEx](https://www.ubitex.com/)
+* [UbitEx](https://www.ubitex.com/)
 
 * [Index](/en/)
 

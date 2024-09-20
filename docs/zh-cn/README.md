@@ -1,6 +1,6 @@
 # 概述 <!-- {docsify-ignore-all} -->
 
-欢迎使用 UBitEx API 文档。 UBitEx 提供 REST API来满足您的交易需求。
+欢迎使用 UbitEx API 文档。 UbitEx 提供 REST API来满足您的交易需求。
 
 # API 资源和支持
 
@@ -9,5 +9,5 @@
 
 
 - 客户服务
-  在我们的电报组中获取支持:  [UBitEx API Support Group](https://t.me/UbitEx_UB)
+  在我们的电报组中获取支持:  [UbitEx API Support Group](https://t.me/UbitEx_UB)
   如有疑问请咨询在线客服

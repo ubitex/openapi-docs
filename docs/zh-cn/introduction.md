@@ -452,5 +452,5 @@ curl --location --request POST 'https://api.ubitex.com/v1/spot/order' \
 
 # 技术支持
 
-在我们的电报组中获取支持:  [UBitEx API Support Group](https://t.me/UbitEx_UB)
+在我们的电报组中获取支持:  [UbitEx API Support Group](https://t.me/UbitEx_UB)
 如有疑问请咨询在线客服

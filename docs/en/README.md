@@ -1,6 +1,6 @@
 # Overview <!-- {docsify-ignore-all} -->
 
-Welcome to the UBitEx API Documentation. UBitEx offers a REST API to meet your trading needs.
+Welcome to the UbitEx API Documentation. UbitEx offers a REST API to meet your trading needs.
 
 # API Resources and Support
 
@@ -8,5 +8,5 @@ Welcome to the UBitEx API Documentation. UBitEx offers a REST API to meet your t
   A lightweight Java library is available here: [Java SDK](https://github.com/ubitex/api-ubitex.com)
 
 - **Customer Support**  
-  Get support in our Telegram group: [UBitEx API Support Group](https://t.me/UbitEx_UB)  
+  Get support in our Telegram group: [UbitEx API Support Group](https://t.me/UbitEx_UB)  
   For inquiries, please consult our online customer service.
